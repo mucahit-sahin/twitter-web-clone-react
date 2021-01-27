@@ -1,0 +1,174 @@
+.container {
+  display: flex;
+  flex: 1;
+  height: 100vh;
+}
+
+.col1 {
+  flex: 0.5;
+}
+
+.logo {
+  position: absolute;
+  width: 50%;
+  height: 100vh;
+  background-color: #5aafe4;
+  border-color: #1da1f2;
+  display: inline;
+  fill: #1da1f2;
+  gap: normal;
+  position: absolute;
+  z-index: -1;
+}
+
+.info {
+  height: 100vh;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20vh;
+  margin-right: 20vh;
+  padding: 15px 0px;
+}
+.infoSearchRow {
+  align-items: stretch;
+  display: flex;
+  font-size: 15px;
+  gap: normal;
+  margin: 0px 0px 40px;
+}
+
+.infoUsersRow {
+  align-items: stretch;
+  display: flex;
+  font-size: 15px;
+  gap: normal;
+  margin: 0px 0px 40px;
+}
+
+.infoChatRow {
+  align-items: stretch;
+  display: flex;
+  font-size: 15px;
+  gap: normal;
+}
+.infoText {
+  color: #ffffff;
+  display: inline;
+  font-size: 19px;
+  font-weight: 700;
+  gap: normal;
+  line-height: 30px;
+}
+
+.col2 {
+  flex: 0.5;
+  background-color: black;
+  align-items: stretch;
+  display: flex;
+  flex-basis: 0%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+.menu {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20vh;
+  margin-right: 20vh;
+}
+
+.header {
+  color: #ffffff;
+  display: inline;
+  font-size: 30px;
+  font-weight: 700;
+  gap: normal;
+  line-height: 39.375px;
+}
+.joinRow {
+  line-height: 19.6875px;
+  margin: 59px 0px 15px;
+}
+
+.join {
+  color: #ffffff;
+  display: inline;
+  font-size: 15px;
+  font-weight: 700;
+  gap: normal;
+  line-height: 19.6875px;
+}
+.buttons {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup {
+  align-items: stretch;
+  background-color: #1da1f2;
+  border-color: #000000;
+  border-color: #000000;
+  border-radius: 9999px;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 15px;
+  padding: 13px 30px;
+}
+
+.signupItem {
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  line-height: 19.6875px;
+  text-align: center;
+}
+
+.signupText {
+  color: #ffffff;
+  display: inline;
+  font-size: 15px;
+  font-weight: 700;
+  gap: normal;
+  line-height: 19.6875px;
+  text-align: center;
+}
+
+.login {
+  align-items: stretch;
+  background-color: black;
+  border-color: #1da1f2;
+  border-color: #1da1f2;
+  border-radius: 9999px;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 15px;
+  padding: 13px 30px;
+}
+
+.loginItem {
+  align-items: center;
+  color: #1da1f2;
+  display: flex;
+  justify-content: center;
+  line-height: 19.6875px;
+  text-align: center;
+}
+
+.loginText {
+  color: #1da1f2;
+  display: inline;
+  font-size: 15px;
+  font-weight: 700;
+  gap: normal;
+  line-height: 19.6875px;
+  text-align: center;
+}
