@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  background-color: #15202b;
+  height: 100vh;
+}
+
+.panel {
+  margin: 15px auto auto;
+  width: 398px;
+  padding: 0px 15px;
+}
+
+.panelHeader {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 15px;
+}
+
+.panelHeaderText {
+  color: #ffffff;
+  display: inline;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 39.375px;
+  font-family: Chirp, Verdana, System;
+  margin-top: 36px;
+}
+.inputRow {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px 5px 5px;
+  border: 1px solid #8899a6;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.label {
+  color: #8899a6;
+  font-size: 19px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.input {
+  background-color: #15202b;
+}
+
+.input:focus ~ .label {
+  background-color: tomato;
+}
+
+.loginBtn {
+  background-color: #1da1f2;
+  border-color: #000000;
+  border-radius: 9999px;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.loginText {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.links {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.link {
+  color: #1b95e0;
+}
+
+.point {
+  color: white;
+  margin: 5px;
+}
