@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ChatIcon from "../../components/icons/ChatIcon";
 import Logo from "../../components/icons/Logo";
 import SearchIcon from "../../components/icons/SearchIcon";
@@ -37,16 +38,16 @@ function SignIndex() {
             <span className="join">Twitter'a bugün katıl.</span>
           </div>
           <div className="buttons">
-            <button href="" className="signup">
+            <Link to="/signup" className="signup">
               <div className="signupItem">
                 <span className="signupText">Üye ol</span>
               </div>
-            </button>
-            <button href="" className="login">
+            </Link>
+            <Link to="/login" className="login">
               <div className="loginItem">
                 <span className="loginText">Giriş yap</span>
               </div>
-            </button>
+            </Link>
           </div>
         </div>
       </div>
