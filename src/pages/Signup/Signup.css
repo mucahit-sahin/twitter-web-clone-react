@@ -1,0 +1,69 @@
+.signUpContainer {
+  height: 100vh;
+  background-color: #5b7083;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: #15202b;
+  width: 540px;
+  margin-top: 37px;
+  margin-bottom: 37px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+}
+
+.signuplogo {
+  display: flex;
+  justify-content: center;
+}
+
+.signupHeader {
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 30.1875px;
+  margin: 15px 0px;
+}
+
+.signupInputRow {
+  border: white 1px solid;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.signupInput {
+  background-color: #15202b;
+}
+.signupLabel {
+  color: #8899a6;
+  font-size: 19px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.acceptTerm {
+  color: #ffffff;
+  font-size: 15px;
+  gap: normal;
+  margin: 59px 0px 0px;
+}
+.acceptTermBlue {
+  color: #1b95e0;
+}
+
+.signupBtn {
+  background-color: #1da1f2;
+  border-color: #000000;
+  border-radius: 9999px;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0px 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
