@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../../components/icons/Logo";
-import "./style.css";
+import "./Login.css";
 
 function Login() {
   const [email, setEmail] = React.useState("");

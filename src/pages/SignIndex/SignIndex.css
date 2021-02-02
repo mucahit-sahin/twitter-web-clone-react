@@ -17,8 +17,6 @@
   display: inline;
   fill: #1da1f2;
   gap: normal;
-  position: absolute;
-  z-index: -1;
 }
 
 .info {
@@ -30,6 +28,7 @@
   margin-left: 20vh;
   margin-right: 20vh;
   padding: 15px 0px;
+  position: absolute;
 }
 .infoSearchRow {
   align-items: stretch;
@@ -64,7 +63,7 @@
 
 .col2 {
   flex: 0.5;
-  background-color: black;
+  background-color: #15202b;
   align-items: stretch;
   display: flex;
   flex-basis: 0%;
@@ -142,7 +141,7 @@
 
 .login {
   align-items: stretch;
-  background-color: black;
+  background-color: #15202b;
   border-color: #1da1f2;
   border-color: #1da1f2;
   border-radius: 9999px;
@@ -171,4 +170,13 @@
   gap: normal;
   line-height: 19.6875px;
   text-align: center;
+}
+
+@media (min-width: 0) and (max-width: 500px) {
+  .col1 {
+    display: none;
+  }
+  .col2 {
+    flex: 1;
+  }
 }

@@ -4,7 +4,7 @@ import ChatIcon from "../../components/icons/ChatIcon";
 import Logo from "../../components/icons/Logo";
 import SearchIcon from "../../components/icons/SearchIcon";
 import UsersIcon from "../../components/icons/UsersIcon";
-import "./style.css";
+import "./SignIndex.css";
 
 function SignIndex() {
   return (
