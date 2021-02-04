@@ -1,6 +1,7 @@
 import React from "react";
 import "./Signup.css";
 import Logo from "../../components/icons/Logo";
+import { Link } from "react-router-dom";
 
 function Signup() {
   return (
@@ -43,9 +44,9 @@ function Signup() {
             numaranla bulabilir.
           </span>
         </div>
-        <div className="signupBtn">
+        <Link to="/home" className="signupBtn">
           <span className="signupText">Kaydol</span>
-        </div>
+        </Link>
       </div>
     </div>
   );

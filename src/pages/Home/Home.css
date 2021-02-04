@@ -1,0 +1,12 @@
+.homeContainer {
+  background-color: #15202b;
+  height: 100vh;
+}
+
+.home {
+  display: flex;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
