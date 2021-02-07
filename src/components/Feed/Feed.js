@@ -16,6 +16,7 @@ function Feed() {
           <HomeStars className="homeStars" width={22} height={22} />
         </div>
       </div>
+      <TweetBox />
     </div>
   );
 }
