@@ -1,0 +1,27 @@
+.widgetsSearch {
+  position: sticky;
+  top: 0;
+  background-color: #253341;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  border-radius: 9999px;
+  border-color: #253341;
+  padding: 10px 18px;
+}
+.widgetsSearchIcon {
+  color: #5e8ca6;
+  font-size: 15px;
+}
+.widgetsSearchInput {
+  width: 100%;
+  background-color: #253341;
+  border: none;
+  font-size: 15px;
+  color: white;
+}
+.widgetsSearchInput::placeholder {
+  color: #5e8ca6;
+  font-size: 15px;
+}
