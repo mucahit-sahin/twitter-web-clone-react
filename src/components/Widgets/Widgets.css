@@ -1,0 +1,14 @@
+.widgets {
+  flex: 0.3;
+  margin-top: 5px;
+  margin-left: 30px;
+  overflow-y: scroll;
+}
+.widgets::-webkit-scrollbar {
+  display: none;
+}
+@media (min-width: 0) and (max-width: 1000px) {
+  .widgets {
+    display: none;
+  }
+}

@@ -1,8 +1,8 @@
 import React from "react";
-import "./WidgetSearch.css";
+import "./SearchInput.css";
 
 import SearchIcon from "@material-ui/icons/Search";
-function WidgetSearch() {
+function SearchInput() {
   return (
     <div className="widgetsSearch">
       <SearchIcon className="widgetsSearchIcon" />
@@ -15,4 +15,4 @@ function WidgetSearch() {
   );
 }
 
-export default WidgetSearch;
+export default SearchInput;
