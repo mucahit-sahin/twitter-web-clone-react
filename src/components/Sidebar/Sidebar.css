@@ -50,12 +50,11 @@
 }
 .profileCard:hover {
   transition: color 100ms ease-out;
-  background-color: #162330;
+  background-color: #162d40;
 }
 
 .profileCardImage {
   border-radius: 9999px;
-  margin: 10px;
   display: flex;
   align-items: center;
 }
