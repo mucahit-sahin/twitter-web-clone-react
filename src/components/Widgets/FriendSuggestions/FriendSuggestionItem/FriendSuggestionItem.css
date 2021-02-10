@@ -1,0 +1,22 @@
+.friendSuggestionsItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 0.5px #38444d solid;
+}
+.friendFollowButton {
+  border-radius: 9999px;
+  border: 1px #1da1f2 solid;
+  color: #1da1f2;
+  display: inline;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19.6875px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: 15px;
+  padding: 5px 16px;
+}
+.friendFollowButton:hover {
+  background-color: #162d40;
+}

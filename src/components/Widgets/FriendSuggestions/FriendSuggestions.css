@@ -1,0 +1,16 @@
+.friendSuggestions {
+  display: flex;
+  flex-direction: column;
+  background-color: #192734;
+  border-radius: 10px;
+  margin: 10px 0px;
+}
+.friendSuggestionsHeader {
+  padding: 10px 15px;
+  color: #ffffff;
+  display: inline;
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 24.9375px;
+  border-bottom: 0.5px #38444d solid;
+}
