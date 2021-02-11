@@ -2,6 +2,7 @@
   display: flex;
   flex: 1;
   height: 100vh;
+  overflow-y: scroll;
 }
 
 .col1 {
@@ -172,11 +173,18 @@
   text-align: center;
 }
 
-@media (min-width: 0) and (max-width: 500px) {
+@media (min-width: 0) and (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
   .col1 {
     display: none;
   }
   .col2 {
     flex: 1;
+  }
+  .menu {
+    margin-left: 10vh;
+    margin-right: 10vh;
   }
 }

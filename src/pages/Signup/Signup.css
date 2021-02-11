@@ -1,13 +1,18 @@
 .signUpContainer {
   height: 100vh;
-  background-color: #5b7083;
+  background-color: #242d34;
   display: flex;
   justify-content: center;
+  overflow-y: scroll;
 }
 
+.signUpContainer::-webkit-scrollbar {
+  display: none;
+}
 .card {
   background-color: #15202b;
   width: 540px;
+  min-height: 600px;
   margin-top: 37px;
   margin-bottom: 37px;
   padding-left: 30px;
@@ -66,4 +71,14 @@
   margin: 15px 0px 0px;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+@media (min-width: 0) and (max-width: 700px) {
+  .signUpContainer {
+    background-color: #15202b;
+    height: auto;
+  }
+  .card {
+    background-color: #15202b;
+    margin: 0px;
+  }
 }
