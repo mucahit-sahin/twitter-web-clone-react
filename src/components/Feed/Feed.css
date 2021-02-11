@@ -1,9 +1,9 @@
 .feed {
   flex: 0.45;
-  border-right: 0.5px solid #e6ecf0;
-  border-left: 0.5px solid #e6ecf0;
+  border-right: 0.5px #38444d solid;
+  border-left: 0.5px #38444d solid;
   overflow-y: scroll;
-  min-width: 500px;
+  min-width: 376px;
 }
 
 .feed::-webkit-scrollbar {
@@ -15,7 +15,7 @@
   top: 0;
   background-color: #15202b;
   z-index: 100;
-  border-bottom: 1px solid #e6ecf0;
+  border-bottom: 0.5px #38444d solid;
   padding: 15px;
   display: flex;
   flex: 1;
@@ -39,4 +39,10 @@
 .homeStars:hover {
   background-color: #162d40;
   border-radius: 9999px;
+}
+
+@media (min-width: 0) and (max-width: 1000px) {
+  .feed {
+    flex: 0.9;
+  }
 }

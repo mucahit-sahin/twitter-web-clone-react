@@ -1,9 +1,9 @@
 .post {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-right: 10px;
   margin-left: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #e6ecf0;
+  border-bottom: 0.5px #38444d solid;
   display: flex;
   flex-direction: row;
 }

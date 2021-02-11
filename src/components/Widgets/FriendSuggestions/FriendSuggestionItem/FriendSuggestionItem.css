@@ -4,6 +4,9 @@
   align-items: center;
   border-bottom: 0.5px #38444d solid;
 }
+.friendSuggestionImage {
+  padding: 15px 10px;
+}
 .friendFollowButton {
   border-radius: 9999px;
   border: 1px #1da1f2 solid;

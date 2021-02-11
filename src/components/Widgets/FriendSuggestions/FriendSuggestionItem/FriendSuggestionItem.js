@@ -5,7 +5,7 @@ import "./FriendSuggestionItem.css";
 function FriendSuggestionItem({ image, displayName, username }) {
   return (
     <div className="friendSuggestionsItem">
-      <div className="profileCardImage">
+      <div className="friendSuggestionImage">
         <Avatar src={image} />
       </div>
       <div className="profileCardNameCol">

@@ -44,3 +44,13 @@
   padding: 15px;
   width: 24px;
 }
+
+@media (min-width: 0) and (max-width: 1250px) {
+  .sidebaricon {
+    padding: 10px;
+    width: 24px;
+  }
+  .sidebarItem > .MuiSvgIcon-root {
+    padding: 10px;
+  }
+}

@@ -10,6 +10,7 @@ import ListIcon from "@material-ui/icons/List";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import ExploreIcon from "../icons/ExploreIcon";
+import SetTweetIcon from "../icons/SetTweetIcon";
 import { Avatar } from "@material-ui/core";
 
 function Sidebar() {
@@ -25,6 +26,7 @@ function Sidebar() {
       <SidebarItem text="Profile" Icon={AccountCircleIcon} />
       <SidebarItem text="More" Icon={MoreHorizIcon} />
       <div className="tweetButton">
+        <SetTweetIcon className="setTweetIcon" />
         <span>Tweetle</span>
       </div>
       <div className="profileCard">
