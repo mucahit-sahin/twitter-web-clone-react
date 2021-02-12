@@ -93,10 +93,10 @@
 }
 
 @media (min-width: 0) and (max-width: 1250px) {
-  .sidebar > .sidebarItem > span {
+  .sidebarItem > span {
     display: none;
   }
-  .sidebar > .tweetButton > span {
+  .tweetButton > span {
     display: none;
   }
   .sidebar {

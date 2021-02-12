@@ -1,0 +1,38 @@
+.exploreSearch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 0.5px #38444d solid;
+}
+
+.exploreSearch > .widgetsSearch {
+  padding: 5px 18px;
+}
+.exploreSearch > .MuiSvgIcon-root {
+  color: #1da1f2;
+  padding: 5px;
+  border-radius: 9999px;
+  margin-left: 10px;
+}
+.exploreSearch > .MuiSvgIcon-root:hover {
+  background-color: #162d40;
+}
+
+.feed > .widgetsTopics {
+  background-color: #15202b;
+  border-radius: 0px;
+}
+
+.feed > .widgetsTopics > .widgetsTopicMore {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom: 0.5px #38444d solid;
+}
+
+.feed > .widgetsTopics > .widgetsTopicsHeader > .MuiSvgIcon-root {
+  display: none;
+}
+.feed > .widgetsTopics > .widgetsTopicsHeader > span {
+  padding: 10px 0px;
+}

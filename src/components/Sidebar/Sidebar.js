@@ -12,13 +12,18 @@ import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import ExploreIcon from "../icons/ExploreIcon";
 import SetTweetIcon from "../icons/SetTweetIcon";
 import { Avatar } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
   return (
     <div className="sidebar">
       <TwitterIcon className="twitter-icon" />
-      <SidebarItem active text="Home" Icon={HomeIcon} />
-      <SidebarItem text="Explore" Icon={ExploreIcon} />
+      <Link to="/home">
+        <SidebarItem active text="Home" Icon={HomeIcon} />
+      </Link>
+      <Link to="/explore">
+        <SidebarItem text="Explore" Icon={ExploreIcon} />
+      </Link>
       <SidebarItem text="Notifications" Icon={NotificationsIcon} />
       <SidebarItem text="Messages" Icon={MessageIcon} />
       <SidebarItem text="Bookmarks" Icon={BookmarkIcon} />
