@@ -18,13 +18,15 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <TwitterIcon className="twitter-icon" />
-      <Link to="/home">
+      <Link to="/home" style={{ textDecoration: "none" }}>
         <SidebarItem active text="Home" Icon={HomeIcon} />
       </Link>
-      <Link to="/explore">
+      <Link to="/explore" style={{ textDecoration: "none" }}>
         <SidebarItem text="Explore" Icon={ExploreIcon} />
       </Link>
-      <SidebarItem text="Notifications" Icon={NotificationsIcon} />
+      <Link to="/Notifications" style={{ textDecoration: "none" }}>
+        <SidebarItem text="Notifications" Icon={NotificationsIcon} />
+      </Link>
       <SidebarItem text="Messages" Icon={MessageIcon} />
       <SidebarItem text="Bookmarks" Icon={BookmarkIcon} />
       <SidebarItem text="Lists" Icon={ListIcon} />

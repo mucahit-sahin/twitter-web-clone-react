@@ -26,30 +26,8 @@
   font-family: Chirp, Verdana, System;
   margin-top: 36px;
 }
-.inputRow {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  padding: 10px 5px 5px;
-  border: 1px solid #8899a6;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-}
-
-.label {
-  color: #8899a6;
-  font-size: 19px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.input {
-  background-color: #15202b;
-}
-
-.input:focus ~ .label {
-  background-color: tomato;
+.inputs {
+  padding: 0px 15px;
 }
 
 .loginBtn {
@@ -63,6 +41,7 @@
   margin: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
+  text-decoration: none;
 }
 
 .loginText {

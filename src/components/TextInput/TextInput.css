@@ -1,0 +1,30 @@
+.textInputRow {
+  border: white 1px solid;
+  border-radius: 5px;
+  margin: 10px 0px;
+  padding: 0px 8px;
+  position: relative;
+}
+.textInputRowActive {
+  border: #1da1f2 2px solid;
+}
+.textInput {
+  background-color: #15202b;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 16px 0px 10px;
+  width: 100%;
+  outline: 0;
+}
+.textInputLabel {
+  color: #8899a6;
+  font-size: 16x;
+  position: absolute;
+  transform-origin: top left;
+  transform: translate(0, 10px) scale(1);
+  transition: all 0.1s ease-in-out;
+}
+.textInputLabelActive {
+  transform: translate(0, 4px) scale(0.75);
+}

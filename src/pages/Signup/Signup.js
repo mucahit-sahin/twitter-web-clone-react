@@ -2,8 +2,13 @@ import React from "react";
 import "./Signup.css";
 import Logo from "../../components/icons/Logo";
 import { Link } from "react-router-dom";
+import TextInput from "../../components/TextInput/TextInput";
 
 function Signup() {
+  const [clicked, setClicked] = React.useState(false);
+  function inputFocus() {
+    setClicked(true);
+  }
   return (
     <div className="signUpContainer">
       <div className="card">
@@ -13,24 +18,9 @@ function Signup() {
         <div className="signupHeader">
           <span>Hesabını oluştur</span>
         </div>
-        <div className="signupInputRow">
-          <input type="text" className="signupInput" id="name" />
-          <label for="name" className="signupLabel">
-            İsim
-          </label>
-        </div>
-        <div className="signupInputRow">
-          <input type="text" className="signupInput" id="email" />
-          <label for="email" className="signupLabel">
-            Email
-          </label>
-        </div>
-        <div className="signupInputRow">
-          <input type="text" className="signupInput" id="dateofbirth" />
-          <label for="dateofbirth" className="signupLabel">
-            Doğum Tarihi
-          </label>
-        </div>
+        <TextInput text="Name" />
+        <TextInput text="Email" />
+        <TextInput text="Date of Birth" />
         <div className="acceptTerm">
           <span>
             Kaydolduğunda

@@ -33,23 +33,6 @@
   margin: 15px 0px;
 }
 
-.signupInputRow {
-  border: white 1px solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-}
-.signupInput {
-  background-color: #15202b;
-}
-.signupLabel {
-  color: #8899a6;
-  font-size: 19px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
 .acceptTerm {
   color: #ffffff;
   font-size: 15px;
@@ -71,6 +54,7 @@
   margin: 15px 0px 0px;
   padding-top: 15px;
   padding-bottom: 15px;
+  text-decoration: none;
 }
 @media (min-width: 0) and (max-width: 700px) {
   .signUpContainer {

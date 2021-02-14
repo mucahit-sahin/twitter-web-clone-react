@@ -1,19 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../components/icons/Logo";
+import TextInput from "../../components/TextInput/TextInput";
 import "./Login.css";
 
 function Login() {
-  const [email, setEmail] = React.useState("");
-  const [password, setPassword] = React.useState("");
-  const [buttonColor, setButtonColor] = React.useState(false);
-
-  React.useEffect(() => {
-    if (email.toString() !== "" && password.toString() !== "") {
-      setButtonColor(true);
-    } else {
-      setButtonColor(false);
-    }
-  }, [email, password]);
   return (
     <div className="container">
       <div className="panel">
@@ -21,34 +12,13 @@ function Login() {
           <Logo width={39} fill="white" />
           <span className="panelHeaderText">Twitter'a giriş yap</span>
         </div>
-        <div className="inputRow">
-          <input
-            type="text"
-            className="input"
-            id="email"
-            onChange={(text) => setEmail(text)}
-          />
-          <label for="email" className="label">
-            Email
-          </label>
+        <div className="inputs">
+          <TextInput text="Telefon, e-posta veya kullanıcı ad" />
+          <TextInput text="Password" />
         </div>
-        <div className="inputRow">
-          <input
-            type="text"
-            className="input"
-            id="sifre"
-            onChange={(text) => setPassword(text)}
-          />
-          <label for="sifre" className="label">
-            Şifre
-          </label>
-        </div>
-        <div
-          className="loginBtn"
-          style={buttonColor ? { opacity: 1 } : { opacity: 0.5 }}
-        >
+        <Link to="/home" className="loginBtn">
           <span className="loginText">Giriş yap</span>
-        </div>
+        </Link>
         <div className="links">
           <a href="">
             <span className="link">Şifreni mi unuttun?</span>
