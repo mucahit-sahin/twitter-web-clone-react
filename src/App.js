@@ -17,6 +17,10 @@ function App() {
       <Route path="/home" component={Home} />
       <Route path="/Explore" component={Explore} />
       <Route path="/Notifications" component={Notifications} />
+      <Route path="/Messages" component={Notifications} />
+      <Route path="/Bookmarks" component={Notifications} />
+      <Route path="/Lists" component={Notifications} />
+      <Route path="/Profile" component={Notifications} />
     </Switch>
   );
 }
