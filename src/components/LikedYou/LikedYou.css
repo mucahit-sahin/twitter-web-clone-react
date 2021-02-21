@@ -1,0 +1,33 @@
+.likedYou {
+  display: flex;
+  padding: 10px 40px;
+  border-bottom: 0.5px var(--border-color) solid;
+}
+.likedYou:hover {
+  background-color: var(--hover-color);
+}
+.likedYou > .MuiSvgIcon-root {
+  color: #e0245e;
+  font-size: 30px;
+  text-align: center;
+  margin-right: 10px;
+}
+.likedYou > div > div {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
+}
+.likedYou > div > div > .MuiAvatar-root {
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+}
+.likedYou > div > span {
+  color: #ffffff;
+  font-size: 15px;
+}
+.likedYou > div > span:nth-child(3) {
+  display: block;
+  color: #8899a6;
+  font-size: 15px;
+}

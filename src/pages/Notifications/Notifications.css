@@ -1,0 +1,49 @@
+.notificationsTitle {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+.notificationsTitle > span {
+  color: #ffffff;
+  display: inline;
+  font-size: 19px;
+  font-weight: 800;
+}
+.notificationsTitle > .MuiSvgIcon-root {
+  margin-left: auto;
+  border-color: var(--blue);
+  color: var(--blue);
+  fill: var(--blue);
+  font-size: 19px;
+  padding: 5px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 9999px;
+}
+.notificationsTitle > .MuiSvgIcon-root:hover {
+  background-color: var(--hover-blue-color);
+}
+.notificationsCategory {
+  display: flex;
+  flex: 1;
+  border-bottom: 0.5px var(--border-color) solid;
+}
+.notificationsCategory > div {
+  flex: 0.5;
+  text-align: center;
+  color: #fff;
+  display: inline;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 15px;
+}
+.notificationActive {
+  border-bottom: 2px var(--blue) solid;
+}
+.notificationActive > span {
+  color: var(--blue);
+}
+.notificationsCategory > div:hover {
+  background-color: var(--hover-blue-color);
+  color: var(--blue);
+}
