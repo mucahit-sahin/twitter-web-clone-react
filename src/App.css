@@ -1,8 +1,10 @@
 :root {
-  --main-bg-color: rgb(21, 32, 43);
+  --main-bg-color: #15202b;
   --blue: #1da1f2;
   --element-bg-color: #192734;
   --hover-color: #1c2732;
   --hover-blue-color: #162d40;
   --border-color: #38444d;
+  --gray: #8899a6;
+  --input-background-color: #253341;
 }

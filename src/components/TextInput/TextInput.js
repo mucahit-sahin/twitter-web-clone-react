@@ -32,7 +32,7 @@ function TextInput({ text }) {
         className="textInput"
         id={text}
         name={value}
-        onChange={(text) => setValue(text)}
+        onChange={(e) => setValue(e.target.value)}
         onFocus={() => {
           setInputFocus(true);
           setClicked(true);

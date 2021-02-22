@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  width: min-content;
 }
 
 .sidebarItem > .MuiSvgIcon-root {
@@ -18,25 +19,25 @@
 
 .sidebarItem:hover {
   border-radius: 30px;
-  color: #50b7f5;
+  color: var(--blue);
   transition: color 100ms ease-out;
-  background-color: #162d40;
+  background-color: var(--hover-blue-color);
 }
 
 .sidebarItem:hover > span {
-  color: #50b7f5;
+  color: var(--blue);
 }
 
 .sidebarItem:hover > .sidebaricon {
-  color: #50b7f5;
-  fill: #50b7f5;
+  color: var(--blue);
+  fill: var(--blue);
 }
 .sidebarItem--active > .sidebaricon {
-  color: #50b7f5;
-  fill: #50b7f5;
+  color: var(--blue);
+  fill: var(--blue);
 }
 .sidebarItem--active > span {
-  color: #50b7f5;
+  color: var(--blue);
 }
 .sidebaricon {
   color: white;

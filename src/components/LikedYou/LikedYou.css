@@ -1,6 +1,6 @@
 .likedYou {
   display: flex;
-  padding: 10px 40px;
+  padding: 10px 35px;
   border-bottom: 0.5px var(--border-color) solid;
 }
 .likedYou:hover {

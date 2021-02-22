@@ -1,0 +1,39 @@
+.widgetsTopicsItem {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.5px var(--border-color) solid;
+}
+.widgetsTopicsItem:hover {
+  background-color: #202e3a;
+}
+.widgetsTopicCategory {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 15px;
+}
+.widgetsTopicCategory > span {
+  color: var(--gray);
+  font-size: 13px;
+}
+.widgetsTopicCategory > .MuiSvgIcon-root {
+  margin-left: auto;
+  color: var(--gray);
+  padding: 5px;
+  border-radius: 9999px;
+}
+.widgetsTopicCategory > .MuiSvgIcon-root:hover {
+  background-color: #20394d;
+}
+
+.widgetsTopicTitle {
+  padding: 0px 15px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+}
+.widgetsTopicCount {
+  padding: 10px 15px;
+  color: var(--gray);
+  font-size: 13px;
+}

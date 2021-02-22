@@ -1,7 +1,7 @@
 .feed {
   flex: 0.45;
-  border-right: 0.5px #38444d solid;
-  border-left: 0.5px #38444d solid;
+  border-right: 0.5px var(--border-color) solid;
+  border-left: 0.5px var(--border-color) solid;
   overflow-y: scroll;
   min-width: 376px;
 }
@@ -13,9 +13,9 @@
 .feed-header {
   position: sticky;
   top: 0;
-  background-color: #15202b;
+  background-color: var(--main-bg-color);
   z-index: 100;
-  border-bottom: 0.5px #38444d solid;
+  border-bottom: 0.5px var(--border-color) solid;
   padding: 15px;
   display: flex;
   flex: 1;
@@ -33,16 +33,22 @@
   justify-content: flex-end;
 }
 .homeStars {
-  fill: #1da1f2;
+  fill: var(--blue);
   padding: 8px;
 }
 .homeStars:hover {
-  background-color: #162d40;
+  background-color: var(--hover-blue-color);
   border-radius: 9999px;
 }
 
 @media (min-width: 0) and (max-width: 1000px) {
   .feed {
     flex: 0.9;
+  }
+}
+@media (min-width: 0) and (max-width: 500px) {
+  .feed {
+    flex: 1;
+    margin: 0px;
   }
 }

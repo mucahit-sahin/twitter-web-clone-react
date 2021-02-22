@@ -11,7 +11,7 @@
   display: none;
 }
 .twitter-icon {
-  color: #50b7f5;
+  color: white;
   font-size: 30px !important;
   margin-top: 12px;
   margin-left: 20px;
@@ -19,7 +19,7 @@
 }
 
 .sidebar-tweet {
-  background-color: #50b7f5 !important;
+  background-color: var(--blue) !important;
   border: none !important;
   color: white !important;
   font-weight: 900 !important;
@@ -34,7 +34,7 @@
   flex-direction: column;
   font-size: 15px;
   margin: 14px 10px;
-  background-color: #1da1f2;
+  background-color: var(--blue);
   padding: 14px;
   justify-content: center;
   text-align: center;
@@ -58,13 +58,12 @@
 }
 .profileCard:hover {
   transition: color 100ms ease-out;
-  background-color: #162d40;
+  background-color: var(--hover-blue-color);
 }
 
-.profileCardImage {
-  border-radius: 9999px;
-  display: flex;
-  align-items: center;
+.profileCardImage > .MuiAvatar-root {
+  width: 40px;
+  height: 40px;
 }
 
 .profileCardNameCol {
@@ -106,10 +105,10 @@
     max-width: 88px;
   }
   .tweetButton {
-    max-width: 50px;
     padding: 10px;
     margin: 0;
     margin-top: 10px;
+    width: min-content;
   }
   .tweetButton > span {
     display: none;
@@ -132,6 +131,17 @@
   }
   .profileCard > .profileCardNameCol,
   .profileCard > .profileCardIcon {
+    display: none;
+  }
+}
+@media (max-height: 850) {
+  .profileCard {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 499px) {
+  .sidebar {
     display: none;
   }
 }

@@ -1,15 +1,19 @@
 .post {
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-  padding-bottom: 10px;
-  border-bottom: 0.5px #38444d solid;
+  padding-top: 10px;
+  border-bottom: 0.5px var(--border-color) solid;
   display: flex;
   flex-direction: row;
 }
-
+.post:hover {
+  background-color: var(--hover-color);
+}
+.post > div > .MuiAvatar-root {
+  width: 50px;
+  height: 50px;
+  margin: 0px 10px 0px 15px;
+}
 .post-content-col {
-  margin: 0px 5px;
+  margin-right: 15px;
   flex: 1;
 }
 .post-header {
@@ -20,25 +24,25 @@
   color: white;
   font-size: 15px;
   font-weight: 700;
-  line-height: 19.6875px;
   margin-right: 5px;
 }
 
 .post-header-username {
-  color: #8899a6;
+  color: var(--gray);
   font-size: 15px;
-  line-height: 19.6875px;
 }
 .postMoreIcon {
+  margin-top: -10px;
   margin-left: auto;
-  color: #8899a6;
+  margin-right: -5px;
+  color: var(--gray);
   border-radius: 9999px;
   padding: 5px;
 }
 
 .postMoreIcon:hover {
-  background-color: #162d40;
-  color: #1da1f2;
+  background-color: var(--hover-blue-color);
+  color: var(--blue);
 }
 
 .post-content {
@@ -46,25 +50,24 @@
   color: #ffffff;
   display: inline;
   font-size: 15px;
-  line-height: 19.6875px;
 }
 
 .post-event {
   display: flex;
   flex: 1;
 }
-.post-event div {
+.post-event > div {
   flex: 0.25;
 }
 .postIcon {
-  fill: #8899a6;
+  fill: var(--gray);
   width: 18px;
   padding: 10px;
   border-radius: 9999px;
 }
 .postIcon:hover {
-  fill: #1da1f2;
-  background-color: #162d40;
+  fill: var(--blue);
+  background-color: var(--hover-blue-color);
 }
 .post-image {
   padding-top: 10px;

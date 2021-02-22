@@ -6,10 +6,10 @@
   position: relative;
 }
 .textInputRowActive {
-  border: #1da1f2 2px solid;
+  border: var(--blue) 2px solid;
 }
 .textInput {
-  background-color: #15202b;
+  background-color: var(--main-bg-color);
   border: none;
   color: white;
   font-size: 16px;
@@ -18,7 +18,7 @@
   outline: 0;
 }
 .textInputLabel {
-  color: #8899a6;
+  color: var(--gray);
   font-size: 16x;
   position: absolute;
   transform-origin: top left;

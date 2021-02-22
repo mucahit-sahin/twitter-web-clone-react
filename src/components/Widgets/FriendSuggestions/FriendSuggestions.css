@@ -11,6 +11,5 @@
   display: inline;
   font-size: 19px;
   font-weight: 800;
-  line-height: 24.9375px;
-  border-bottom: 0.5px #38444d solid;
+  border-bottom: 0.5px var(--border-color) solid;
 }

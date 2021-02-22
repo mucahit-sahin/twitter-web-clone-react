@@ -2,24 +2,22 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-bottom: 0.5px #38444d solid;
+  border-bottom: 0.5px var(--border-color) solid;
 }
 .friendSuggestionImage {
   padding: 15px 10px;
 }
 .friendFollowButton {
   border-radius: 9999px;
-  border: 1px #1da1f2 solid;
-  color: #1da1f2;
-  display: inline;
+  border: 1px var(--blue) solid;
+  color: var(--blue);
   font-size: 15px;
   font-weight: 700;
-  line-height: 19.6875px;
   text-align: center;
   margin-left: auto;
   margin-right: 15px;
   padding: 5px 16px;
 }
 .friendFollowButton:hover {
-  background-color: #162d40;
+  background-color: var(--hover-blue-color);
 }
