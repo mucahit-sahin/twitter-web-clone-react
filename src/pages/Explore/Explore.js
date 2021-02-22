@@ -5,6 +5,7 @@ import FriendSuggestions from "../../components/Widgets/FriendSuggestions/Friend
 import SearchInput from "../../components/Widgets/SearchInput/SearchInput";
 import SettingsIcon from "@material-ui/icons/Settings";
 import Topics from "../../components/Widgets/Topics/Topics";
+import BottomSidebar from "../../components/BottomSidebar/BottomSidebar";
 
 function Explore() {
   return (
@@ -17,6 +18,7 @@ function Explore() {
             <SettingsIcon />
           </div>
           <Topics />
+          <BottomSidebar />
         </div>
         <div className="widgets">
           <FriendSuggestions />

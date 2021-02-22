@@ -6,6 +6,7 @@ import SettingsIcon from "@material-ui/icons/Settings";
 import Post from "../../components/Feed/Post/Post";
 import FollowedYou from "../../components/FollowedYou/FollowedYou";
 import LikedYou from "../../components/LikedYou/LikedYou";
+import BottomSidebar from "../../components/BottomSidebar/BottomSidebar";
 
 function Notifications() {
   const [isAll, setIsAll] = React.useState(true);
@@ -35,55 +36,58 @@ function Notifications() {
               </div>
             </div>
           </div>
-          {isAll ? (
-            <>
-              <FollowedYou
-                followingUser={{
-                  userImage:
-                    "https://pbs.twimg.com/profile_images/1348390204810407937/BmUVaYGD_400x400.jpg",
-                  displayName: "Cihat Necati",
-                }}
-              />
-              <LikedYou
-                likePost={{
-                  id: 1,
-                  likeUser: [
-                    {
-                      displayName: "C Necati",
-                      userImage:
-                        "https://pbs.twimg.com/profile_images/1348390204810407937/BmUVaYGD_400x400.jpg",
-                    },
-                    {
-                      displayName: "Mehmet",
-                      userImage:
-                        "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
-                    },
-                    {
-                      displayName: "Code",
-                      userImage:
-                        "https://pbs.twimg.com/profile_images/1278357302601347072/BGZIBPH9_200x200.jpg",
-                    },
-                  ],
-                  post: "Bu tweeti beğenin.",
-                }}
-              />
-              <Post
-                username="cnecati"
-                userimage="https://pbs.twimg.com/profile_images/1348390204810407937/BmUVaYGD_400x400.jpg"
-                displayName="Cihat Necati"
-                text="@mucahitsahin Projelerine github.com/mucahit-sahin adresinden ulaşabilirsiniz"
-              />
-            </>
-          ) : (
-            <>
-              <Post
-                username="cnecati"
-                userimage="https://pbs.twimg.com/profile_images/1348390204810407937/BmUVaYGD_400x400.jpg"
-                displayName="Cihat Necati"
-                text="@mucahitsahin Projelerine github.com/mucahit-sahin adresinden ulaşabilirsiniz"
-              />
-            </>
-          )}
+          <article>
+            {isAll ? (
+              <>
+                <FollowedYou
+                  followingUser={{
+                    userImage:
+                      "https://pbs.twimg.com/profile_images/1348390204810407937/BmUVaYGD_400x400.jpg",
+                    displayName: "Cihat Necati",
+                  }}
+                />
+                <LikedYou
+                  likePost={{
+                    id: 1,
+                    likeUser: [
+                      {
+                        displayName: "C Necati",
+                        userImage:
+                          "https://pbs.twimg.com/profile_images/1348390204810407937/BmUVaYGD_400x400.jpg",
+                      },
+                      {
+                        displayName: "Mehmet",
+                        userImage:
+                          "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
+                      },
+                      {
+                        displayName: "Code",
+                        userImage:
+                          "https://pbs.twimg.com/profile_images/1278357302601347072/BGZIBPH9_200x200.jpg",
+                      },
+                    ],
+                    post: "Bu tweeti beğenin.",
+                  }}
+                />
+                <Post
+                  username="cnecati"
+                  userimage="https://pbs.twimg.com/profile_images/1348390204810407937/BmUVaYGD_400x400.jpg"
+                  displayName="Cihat Necati"
+                  text="@mucahitsahin Projelerine github.com/mucahit-sahin adresinden ulaşabilirsiniz"
+                />
+              </>
+            ) : (
+              <>
+                <Post
+                  username="cnecati"
+                  userimage="https://pbs.twimg.com/profile_images/1348390204810407937/BmUVaYGD_400x400.jpg"
+                  displayName="Cihat Necati"
+                  text="@mucahitsahin Projelerine github.com/mucahit-sahin adresinden ulaşabilirsiniz"
+                />
+              </>
+            )}
+          </article>
+          <BottomSidebar />
         </div>
         <Widgets />
       </div>

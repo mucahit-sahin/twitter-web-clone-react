@@ -4,6 +4,7 @@ import TweetBox from "./TweetBox/TweetBox";
 import Post from "./Post/Post";
 import ProfilePhoto from "../../assets/profile.png";
 import HomeStars from "../icons/HomeStars";
+import BottomSidebar from "../BottomSidebar/BottomSidebar";
 
 function Feed() {
   return (
@@ -49,6 +50,7 @@ function Feed() {
         text="Bu proje React ile gerçekleştirilmiştir."
         shareImage="https://miro.medium.com/proxy/1*vHHBwcUFUaHWXntSnqKdCA.png"
       />
+      <BottomSidebar />
     </div>
   );
 }

@@ -3,7 +3,6 @@
   border-right: 0.5px var(--border-color) solid;
   border-left: 0.5px var(--border-color) solid;
   overflow-y: scroll;
-  min-width: 376px;
 }
 
 .feed::-webkit-scrollbar {
