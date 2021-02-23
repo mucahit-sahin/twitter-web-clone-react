@@ -6,21 +6,40 @@ import GifIcon from "../../icons/GifIcon";
 import SurveyIcon from "../../icons/SurveyIcon";
 import EmojiIcon from "../../icons/EmojiIcon";
 import PlanIcon from "../../icons/PlanIcon";
+import { useDispatch } from "react-redux";
+import { addTweetAction } from "../../../store/Actions";
 
 function TweetBox() {
-  const [tweetMessage, setTweetMessage] = useState("");
+  const [tweet, setTweet] = useState({
+    id: Date.now(),
+    userimage:
+      "https://avatars2.githubusercontent.com/u/38807255?s=460&u=deb087d587be7f6a4000e4e710ec4d1daa6fde84&v=4",
+    username: "mucahitsah",
+    displayName: "Mücahit Şahin",
+    text: "",
+    shareImage: "",
+    date: Date.now(),
+  });
 
+  const dispatch = useDispatch();
+  const addTweet = (tweet) => dispatch(addTweetAction(tweet));
+  const tweetSubmit = (e) => {
+    e.preventDefault();
+    if (tweet.text.trim() === "") return;
+    addTweet(tweet);
+    setTweet({ ...tweet, text: "" });
+  };
   return (
     <>
-      <div className="tweetbox">
+      <form className="tweetbox" onSubmit={(e) => tweetSubmit(e)}>
         <div className="tweetboxRow">
           <div className="tweetboxUserIcon">
             <Avatar src="https://avatars2.githubusercontent.com/u/38807255?s=460&u=deb087d587be7f6a4000e4e710ec4d1daa6fde84&v=4" />
           </div>
           <div className="tweetbox-input-row">
             <input
-              value={tweetMessage}
-              onChange={(e) => setTweetMessage(e.target.value)}
+              value={tweet.text}
+              onChange={(e) => setTweet({ ...tweet, text: e.target.value })}
               className="tweetbox-input"
               placeholder="What's happening?"
               type="text"
@@ -35,12 +54,12 @@ function TweetBox() {
             <SurveyIcon className="tweetboxOptionIcon" width={22} height={22} />
             <EmojiIcon className="tweetboxOptionIcon" width={22} height={22} />
             <PlanIcon className="tweetboxOptionIcon" width={22} height={22} />
-            <div className="tweetbox-button">
-              <span>Tweet</span>
-            </div>
+            <button type="submit" className="tweetbox-button">
+              Tweet
+            </button>
           </div>
         </div>
-      </div>
+      </form>
       <div className="bottomBorder"></div>
     </>
   );

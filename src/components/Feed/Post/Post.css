@@ -31,6 +31,11 @@
   color: var(--gray);
   font-size: 15px;
 }
+.post-header-date {
+  margin-left: 5px;
+  color: var(--gray);
+  font-size: 15px;
+}
 .postMoreIcon {
   margin-top: -10px;
   margin-left: auto;

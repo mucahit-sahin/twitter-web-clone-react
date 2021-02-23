@@ -6,8 +6,10 @@ import CommentIcon from "../../icons/CommentIcon";
 import RetweetIcon from "../../icons/RetweetIcon";
 import SharePostIcon from "../../icons/SharePostIcon";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
+import { MillToDate } from "../../../utils/MillToDate";
 
-function Post({ userimage, username, displayName, text, shareImage }) {
+function Post({ userimage, username, displayName, text, shareImage, date }) {
+  console.log("cagirildim");
   return (
     <div className="post">
       <div>
@@ -17,6 +19,7 @@ function Post({ userimage, username, displayName, text, shareImage }) {
         <div className="post-header">
           <span className="post-header-displayname">{displayName}</span>
           <span className="post-header-username">{"@" + username}</span>
+          <span className="post-header-date">{MillToDate(date)}</span>
           <MoreHorizIcon className="postMoreIcon" />
         </div>
         <div className="post-content">{text}</div>

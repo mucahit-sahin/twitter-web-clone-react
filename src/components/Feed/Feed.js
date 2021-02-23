@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Feed.css";
 import TweetBox from "./TweetBox/TweetBox";
 import Post from "./Post/Post";
-import ProfilePhoto from "../../assets/profile.png";
 import HomeStars from "../icons/HomeStars";
 import BottomSidebar from "../BottomSidebar/BottomSidebar";
+import { useSelector } from "react-redux";
 
 function Feed() {
+  const posts = useSelector((state) => state.posts);
   return (
-    <div className="feed">
+    <section className="feed">
       <div className="feed-header">
         <div className="feed-headerText">
           <span>Home</span>
@@ -18,40 +19,20 @@ function Feed() {
         </div>
       </div>
       <TweetBox />
-      <Post
-        username="mucahitsah"
-        userimage={ProfilePhoto}
-        displayName="Mücahit Şahin"
-        text="Merhaba bu ilk tweetim"
-        shareImage="https://www.webtekno.com/images/editor/default/0002/100/5ef88e5ff724d9853a14c6d624720c31f4ae6dda.jpeg"
-      />
-      <Post
-        username="mucahitsah"
-        userimage={ProfilePhoto}
-        displayName="Mücahit Şahin"
-        text="Projelerime github.com/mucahit-sahin adresinden ulaşabilirsiniz"
-      />
-      <Post
-        username="mucahitsah"
-        userimage={ProfilePhoto}
-        displayName="Mücahit Şahin"
-        text="Linkedin hesabıma linkedin.com/in/mucahit-sahin/ adresinden ulaşabilirsiniz."
-      />
-      <Post
-        username="mucahitsah"
-        userimage={ProfilePhoto}
-        displayName="Mücahit Şahin"
-        text="Merhaba bu ilk tweetim"
-      />
-      <Post
-        username="mucahitsah"
-        userimage={ProfilePhoto}
-        displayName="Mücahit Şahin"
-        text="Bu proje React ile gerçekleştirilmiştir."
-        shareImage="https://miro.medium.com/proxy/1*vHHBwcUFUaHWXntSnqKdCA.png"
-      />
+      <article>
+        {posts.map((post) => (
+          <Post
+            key={post.id}
+            username={post.username}
+            userimage={post.userimage}
+            date={post.date}
+            displayName={post.displayName}
+            text={post.text}
+          />
+        ))}
+      </article>
       <BottomSidebar />
-    </div>
+    </section>
   );
 }
 
