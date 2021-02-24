@@ -1,0 +1,158 @@
+.profileHeader {
+  position: sticky;
+  z-index: 2;
+  top: 0px;
+  background-color: var(--main-bg-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 0.5px solid var(--border-color);
+}
+.profileHeader > .MuiSvgIcon-root {
+  margin: 8px 25px 8px 12px;
+  padding: 7px;
+  color: var(--blue);
+  border-radius: 9999px;
+}
+.profileHeader > .MuiSvgIcon-root:hover {
+  background-color: var(--hover-blue-color);
+}
+.profileHeader div span:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 800;
+}
+.profileHeader div span:nth-child(2) {
+  color: #8899a6;
+  font-size: 13px;
+}
+.backgroundImage {
+  height: 200px;
+  width: 100%;
+  background-color: #3d5466;
+}
+.profileTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 15px;
+}
+.profileImage {
+  width: 134px;
+  height: 134px;
+  margin-top: -67px;
+  border-radius: 9999px;
+  padding: 5px;
+  background-color: var(--main-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profileImage > .MuiAvatar-root {
+  width: 134px;
+  height: 134px;
+}
+.editProfile {
+  height: auto;
+  margin-left: auto;
+  margin-top: -7px;
+  padding: 10px 15px;
+  border: 1px var(--blue) solid;
+  border-radius: 9999px;
+  color: var(--blue);
+  font-size: 15px;
+  font-weight: 700;
+}
+.editProfile:hover {
+  background-color: var(--hover-blue-color);
+}
+.profileBiography {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 15px;
+}
+.profileBiography span:nth-child(1) {
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 800;
+}
+.profileBiography span:nth-child(2) {
+  color: var(--gray);
+  font-size: 15px;
+}
+.profileBiography span:nth-child(3) {
+  margin: 5px 0px;
+  color: #ffffff;
+  font-size: 15px;
+}
+.profileBiography span:nth-child(4) {
+  display: flex;
+  align-items: center;
+  color: var(--gray);
+  font-size: 15px;
+}
+.profileBiography span:nth-child(4) .MuiSvgIcon-root {
+  font-size: 15px;
+  margin-right: 5px;
+}
+.profile div:nth-child(4) {
+  padding: 0px 15px;
+  margin-top: 5px;
+}
+.profile div:nth-child(4) span {
+  margin-right: 15px;
+}
+.profile div:nth-child(4) span span:nth-child(1) {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  margin-right: 5px;
+}
+.profile div:nth-child(4) span span:nth-child(2) {
+  color: var(--gray);
+  font-size: 15px;
+}
+.profileCategory {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  border-bottom: 0.5px var(--border-color) solid;
+  margin-top: 15px;
+}
+.profileCategory > div:nth-child(1),
+.profileCategory > div:nth-child(3),
+.profileCategory > div:nth-child(4) {
+  flex: 0.2;
+  text-align: center;
+  color: var(--gray);
+  font-size: 15px;
+  font-weight: 700;
+  padding: 15px 0px;
+}
+.profileCategory > div:nth-child(2) {
+  flex: 0.4;
+  text-align: center;
+  color: var(--gray);
+  font-size: 15px;
+  font-weight: 700;
+  padding: 15px 0px;
+}
+.profileCategory > div:hover {
+  background-color: var(--hover-blue-color);
+  color: var(--blue);
+}
+.profileCategoryActive {
+  border-bottom: 2px var(--blue) solid;
+}
+.profileCategoryActive > span {
+  color: var(--blue);
+}
+
+@media (min-width: 0) and (max-width: 1000px) {
+  .backgroundImage {
+    height: 100px;
+  }
+}
