@@ -9,20 +9,18 @@ import BottomSidebar from "../../components/BottomSidebar/BottomSidebar";
 
 function Explore() {
   return (
-    <div className="homeContainer">
-      <div className="home">
-        <Sidebar />
-        <div className="feed">
-          <div className="exploreSearch">
-            <SearchInput />
-            <SettingsIcon />
-          </div>
-          <Topics />
-          <BottomSidebar />
+    <div className="home">
+      <Sidebar />
+      <div className="feed">
+        <div className="exploreSearch">
+          <SearchInput />
+          <SettingsIcon />
         </div>
-        <div className="widgets">
-          <FriendSuggestions />
-        </div>
+        <Topics />
+        <BottomSidebar />
+      </div>
+      <div className="widgets">
+        <FriendSuggestions />
       </div>
     </div>
   );

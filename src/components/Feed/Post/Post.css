@@ -63,6 +63,12 @@
 }
 .post-event > div {
   flex: 0.25;
+  display: flex;
+  align-items: center;
+}
+.post-event > div > span {
+  color: var(--gray);
+  font-size: 13px;
 }
 .postIcon {
   fill: var(--gray);
@@ -70,9 +76,27 @@
   padding: 10px;
   border-radius: 9999px;
 }
-.postIcon:hover {
+.post-event div:nth-child(1) .postIcon:hover,
+.post-event div:nth-child(4) .postIcon:hover {
   fill: var(--blue);
   background-color: var(--hover-blue-color);
+}
+.post-event div:nth-child(1) .postIcon:hover + span {
+  color: var(--blue);
+}
+.post-event div:nth-child(2) .postIcon:hover {
+  fill: #17bf63;
+  background-color: var(--hover-blue-color);
+}
+.post-event div:nth-child(2) .postIcon:hover + span {
+  color: #17bf63;
+}
+.post-event div:nth-child(3) .postIcon:hover {
+  fill: #e0245e;
+  background-color: var(--hover-blue-color);
+}
+.post-event div:nth-child(3) .postIcon:hover + span {
+  color: #e0245e;
 }
 .post-image {
   padding-top: 10px;
@@ -81,4 +105,6 @@
 .post-image img {
   width: 100%;
   border-radius: 10px;
+  max-height: 300px;
+  object-fit: cover;
 }

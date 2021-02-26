@@ -29,14 +29,13 @@
   margin-top: 20px !important;
 }
 .tweetButton {
-  align-items: stretch;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   font-size: 15px;
-  margin: 14px 10px;
+  margin: 14px 0px;
   background-color: var(--blue);
   padding: 14px;
-  justify-content: center;
   text-align: center;
   border-radius: 9999px;
   color: white;
@@ -140,7 +139,7 @@
   }
 }
 
-@media (min-width: 0) and (max-width: 499px) {
+@media (min-width: 0) and (max-width: 450px) {
   .sidebar {
     display: none;
   }

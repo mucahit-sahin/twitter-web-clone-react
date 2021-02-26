@@ -1,13 +1,14 @@
 .bottomSidebar {
   display: none;
 }
-@media (min-width: 0) and (max-width: 499px) {
+@media (min-width: 0) and (max-width: 450px) {
   .bottomSidebar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex: 1;
-    position: sticky;
-    bottom: 0;
     background-color: var(--main-bg-color);
     border-top: 1px solid var(--border-color);
   }

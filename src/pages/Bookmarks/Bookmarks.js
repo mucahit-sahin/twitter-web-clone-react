@@ -1,16 +1,19 @@
 import React from "react";
-import Feed from "../../components/Feed/Feed";
+import BottomSidebar from "../../components/BottomSidebar/BottomSidebar";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Widgets from "../../components/Widgets/Widgets";
-import "./Home.css";
-function Home() {
+import "./Bookmarks.css";
+
+const Bookmarks = () => {
   return (
     <div className="home">
       <Sidebar />
-      <Feed />
+      <div className="feed">
+        <span>Bookmarks</span>
+      </div>
       <Widgets />
     </div>
   );
-}
+};
 
-export default Home;
+export default Bookmarks;

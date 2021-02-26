@@ -47,6 +47,3 @@
   background-color: var(--hover-blue-color);
   color: var(--blue);
 }
-article {
-  min-height: 80%;
-}

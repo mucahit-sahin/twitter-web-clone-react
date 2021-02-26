@@ -8,3 +8,6 @@
   --gray: #8899a6;
   --input-background-color: #253341;
 }
+body {
+  background-color: var(--main-bg-color);
+}

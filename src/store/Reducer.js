@@ -22,13 +22,24 @@ const initialstate = {
       shareImage: "",
       date: "1614077764184",
     },
+    {
+      id: 3,
+      userimage:
+        "https://avatars2.githubusercontent.com/u/38807255?s=460&u=deb087d587be7f6a4000e4e710ec4d1daa6fde84&v=4",
+      username: "mucahitsah",
+      displayName: "Mücahit Şahin",
+      text: "Babür Maskesiz",
+      shareImage:
+        "https://pbs.twimg.com/media/EQ2JNjrXsAEfeZd?format=png&name=small",
+      date: "1614077764184",
+    },
   ],
 };
 
 function reducer(state, action) {
   switch (action.type) {
     case "ADD_POST":
-      return { ...state, posts: [...state.posts, action.payload] };
+      return { posts: [...state.posts, action.payload], ...state };
     default:
       return state;
   }

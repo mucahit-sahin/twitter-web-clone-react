@@ -1,5 +1,5 @@
 .homeContainer {
-  background-color: #15202b;
+  background-color: var(--main-bg-color);
   height: 100vh;
 }
 
@@ -15,5 +15,10 @@
 @media (min-width: 0) and (max-width: 1000px) {
   .home {
     max-width: 688px;
+  }
+}
+@media (min-width: 0) and (max-width: 450px) {
+  .home {
+    padding: 0px;
   }
 }

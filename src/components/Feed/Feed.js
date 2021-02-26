@@ -28,6 +28,7 @@ function Feed() {
             date={post.date}
             displayName={post.displayName}
             text={post.text}
+            shareImage={post.shareImage}
           />
         ))}
       </article>

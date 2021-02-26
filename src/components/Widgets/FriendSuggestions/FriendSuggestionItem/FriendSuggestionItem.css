@@ -7,6 +7,9 @@
 .friendSuggestionImage {
   padding: 15px 10px;
 }
+.friendSuggestionImage .MuiAvatar-root {
+  z-index: 1;
+}
 .friendFollowButton {
   border-radius: 9999px;
   border: 1px var(--blue) solid;

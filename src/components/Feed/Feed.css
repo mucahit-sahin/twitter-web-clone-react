@@ -1,5 +1,5 @@
 .feed {
-  flex: 0.45;
+  flex: 0.5;
   border-right: 0.5px var(--border-color) solid;
   border-left: 0.5px var(--border-color) solid;
   overflow-y: scroll;
@@ -45,7 +45,7 @@
     flex: 0.9;
   }
 }
-@media (min-width: 0) and (max-width: 500px) {
+@media (min-width: 0) and (max-width: 450px) {
   .feed {
     flex: 1;
     margin: 0px;

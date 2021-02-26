@@ -1,108 +1,84 @@
 .container {
   display: flex;
   flex: 1;
-  height: 100vh;
-  overflow-y: scroll;
+  flex-direction: row;
+  height: 100%;
 }
 
 .col1 {
   flex: 0.5;
+  position: relative;
+  background-color: #5aafe4;
 }
 
 .logo {
-  position: absolute;
   width: 50%;
   height: 100vh;
-  background-color: #5aafe4;
   border-color: #1da1f2;
   display: inline;
   fill: #1da1f2;
-  gap: normal;
 }
 
 .info {
-  height: 100vh;
-  align-items: stretch;
+  position: absolute;
+  top: 0px;
+  left: 20%;
+  right: 20%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 20vh;
-  margin-right: 20vh;
   padding: 15px 0px;
-  position: absolute;
 }
-.infoSearchRow {
-  align-items: stretch;
-  display: flex;
+.info div:nth-child(1),
+.info div:nth-child(2) {
   font-size: 15px;
-  gap: normal;
   margin: 0px 0px 40px;
 }
 
-.infoUsersRow {
-  align-items: stretch;
-  display: flex;
+.info div:nth-child(3) {
   font-size: 15px;
-  gap: normal;
-  margin: 0px 0px 40px;
 }
-
-.infoChatRow {
-  align-items: stretch;
-  display: flex;
-  font-size: 15px;
-  gap: normal;
+.indexIcon {
+  width: 19px;
+  fill: white;
+  stroke: white;
 }
-.infoText {
+.info div span {
   color: #ffffff;
-  display: inline;
   font-size: 19px;
   font-weight: 700;
-  gap: normal;
-  line-height: 30px;
 }
 
 .col2 {
   flex: 0.5;
   background-color: #15202b;
-  align-items: stretch;
   display: flex;
-  flex-basis: 0%;
   flex-direction: column;
   justify-content: center;
   padding: 15px;
 }
 .menu {
-  align-items: stretch;
   display: flex;
   flex-direction: column;
   margin-left: 20vh;
   margin-right: 20vh;
+  min-width: 60%px;
 }
 
 .header {
   color: #ffffff;
-  display: inline;
   font-size: 30px;
   font-weight: 700;
-  gap: normal;
-  line-height: 39.375px;
-}
-.joinRow {
-  line-height: 19.6875px;
-  margin: 59px 0px 15px;
 }
 
 .join {
+  margin: 59px 0px 15px;
   color: #ffffff;
-  display: inline;
   font-size: 15px;
   font-weight: 700;
-  gap: normal;
-  line-height: 19.6875px;
 }
 .buttons {
-  align-items: stretch;
   display: flex;
   flex-direction: column;
 }
@@ -126,7 +102,6 @@
   color: #ffffff;
   display: flex;
   justify-content: center;
-  line-height: 19.6875px;
   text-align: center;
   text-decoration: none;
 }
@@ -136,8 +111,6 @@
   display: inline;
   font-size: 15px;
   font-weight: 700;
-  gap: normal;
-  line-height: 19.6875px;
   text-align: center;
 }
 
@@ -160,32 +133,32 @@
   color: #1da1f2;
   display: flex;
   justify-content: center;
-  line-height: 19.6875px;
   text-align: center;
 }
 
 .loginText {
   color: #1da1f2;
-  display: inline;
   font-size: 15px;
   font-weight: 700;
-  gap: normal;
-  line-height: 19.6875px;
   text-align: center;
 }
 
-@media (min-width: 0) and (max-width: 1000px) {
+@media (min-width: 0) and (max-width: 700px) {
   .container {
+    display: flex;
     flex-direction: column;
+    height: none;
   }
   .col1 {
-    display: none;
+    flex: 1;
+  }
+  .info div span {
+    font-size: 15px;
   }
   .col2 {
     flex: 1;
   }
   .menu {
-    margin-left: 10vh;
-    margin-right: 10vh;
+    margin: 20px 10vh;
   }
 }

@@ -3,31 +3,31 @@
   flex-direction: row;
   align-items: center;
   padding: 10px 20px;
-  border-bottom: 0.5px #38444d solid;
+  border-bottom: 0.5px var(--border-color) solid;
 }
 
 .exploreSearch > .widgetsSearch {
   padding: 5px 18px;
 }
 .exploreSearch > .MuiSvgIcon-root {
-  color: #1da1f2;
+  color: var(--blue);
   padding: 5px;
   border-radius: 9999px;
   margin-left: 10px;
 }
 .exploreSearch > .MuiSvgIcon-root:hover {
-  background-color: #162d40;
+  background-color: var(--hover-blue-color);
 }
 
 .feed > .widgetsTopics {
-  background-color: #15202b;
+  background-color: var(--main-bg-color);
   border-radius: 0px;
 }
 
 .feed > .widgetsTopics > .widgetsTopicMore {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  border-bottom: 0.5px #38444d solid;
+  border-bottom: 0.5px var(--border-color) solid;
 }
 
 .feed > .widgetsTopics > .widgetsTopicsHeader > .MuiSvgIcon-root {

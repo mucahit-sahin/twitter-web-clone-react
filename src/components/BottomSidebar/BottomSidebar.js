@@ -2,10 +2,12 @@ import React from "react";
 import "./BottomSidebar.css";
 import { Link, useLocation } from "react-router-dom";
 import SidebarItem from "../Sidebar/SidebarItem/SidebarItem";
-import HomeIcon from "@material-ui/icons/Home";
-import NotificationsIcon from "@material-ui/icons/Notifications";
-import MessageIcon from "@material-ui/icons/Message";
-import ExploreIcon from "../icons/ExploreIcon";
+import {
+  HomeIcon,
+  MessagesIcon,
+  ExploreIcon,
+  NotificationsIcon,
+} from "../icons/index";
 
 const BottomSidebar = () => {
   const [location, setLocation] = React.useState(useLocation().pathname);
@@ -42,7 +44,7 @@ const BottomSidebar = () => {
         <Link to="/Messages" style={{ textDecoration: "none" }}>
           <SidebarItem
             text="Messages"
-            Icon={MessageIcon}
+            Icon={MessagesIcon}
             active={location == "/Messages" && true}
           />
         </Link>

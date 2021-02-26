@@ -7,6 +7,10 @@ import Signup from "./pages/Signup/Signup";
 import Home from "./pages/Home/Home";
 import Explore from "./pages/Explore/Explore";
 import Notifications from "./pages/Notifications/Notifications";
+import Profile from "./pages/Profile/Profile";
+import Bookmarks from "./pages/Bookmarks/Bookmarks";
+import Messages from "./pages/Messages/Messages";
+import Lists from "./pages/Lists/Lists";
 
 function App() {
   return (
@@ -17,10 +21,10 @@ function App() {
       <Route path="/home" component={Home} />
       <Route path="/Explore" component={Explore} />
       <Route path="/Notifications" component={Notifications} />
-      <Route path="/Messages" component={Notifications} />
-      <Route path="/Bookmarks" component={Notifications} />
-      <Route path="/Lists" component={Notifications} />
-      <Route path="/Profile" component={Notifications} />
+      <Route path="/Messages" component={Messages} />
+      <Route path="/Bookmarks" component={Bookmarks} />
+      <Route path="/Lists" component={Lists} />
+      <Route path="/Profile" component={Profile} />
     </Switch>
   );
 }

@@ -1,16 +1,17 @@
 import React from "react";
-import Feed from "../../components/Feed/Feed";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Widgets from "../../components/Widgets/Widgets";
-import "./Home.css";
-function Home() {
+import "./Lists.css";
+const Lists = () => {
   return (
     <div className="home">
       <Sidebar />
-      <Feed />
+      <div className="feed">
+        <span>Bookmarks</span>
+      </div>
       <Widgets />
     </div>
   );
-}
+};
 
-export default Home;
+export default Lists;
