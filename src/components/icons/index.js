@@ -21,3 +21,4 @@ export { default as UsersIcon } from "./UsersIcon";
 export { default as NotificationsIcon } from "./NotificationsIcon";
 export { default as BookmarkIcon } from "./BookmarkIcon";
 export { default as MoreIcon } from "./MoreIcon";
+export { default as VerifiedIcon } from "./VerifiedIcon";

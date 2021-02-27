@@ -7,16 +7,29 @@ import RetweetIcon from "../../icons/RetweetIcon";
 import SharePostIcon from "../../icons/SharePostIcon";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import { MillToDate } from "../../../utils/MillToDate";
+import ProfileCard from "../../ProfileCard/ProfileCard";
 
 function Post({ userimage, username, displayName, text, shareImage, date }) {
+  const [isVisibleProfileCard, setIsVisibleProfileCard] = React.useState(false);
   return (
     <div className="post">
+      <ProfileCard active={isVisibleProfileCard && true} />
       <div>
         <Avatar src={userimage} />
       </div>
       <div className="post-content-col">
         <div className="post-header">
-          <span className="post-header-displayname">{displayName}</span>
+          <span
+            className="post-header-displayname"
+            onMouseEnter={() => setIsVisibleProfileCard(true)}
+            onMouseLeave={() => {
+              setTimeout(function () {
+                setIsVisibleProfileCard(false);
+              }, 500);
+            }}
+          >
+            {displayName}
+          </span>
           <span className="post-header-username">{"@" + username}</span>
           <span className="post-header-date">{MillToDate(date)}</span>
           <MoreHorizIcon className="postMoreIcon" />

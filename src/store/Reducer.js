@@ -39,7 +39,7 @@ const initialstate = {
 function reducer(state, action) {
   switch (action.type) {
     case "ADD_POST":
-      return { posts: [...state.posts, action.payload], ...state };
+      return { ...state, posts: [...state.posts, action.payload] };
     default:
       return state;
   }

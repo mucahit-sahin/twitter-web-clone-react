@@ -3,6 +3,7 @@
   border-bottom: 0.5px var(--border-color) solid;
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 .post:hover {
   background-color: var(--hover-color);
@@ -15,6 +16,7 @@
 .post-content-col {
   margin-right: 15px;
   flex: 1;
+  position: relative;
 }
 .post-header {
   display: flex;
@@ -26,7 +28,9 @@
   font-weight: 700;
   margin-right: 5px;
 }
-
+.post-header-displayname:hover {
+  text-decoration: underline;
+}
 .post-header-username {
   color: var(--gray);
   font-size: 15px;
@@ -86,14 +90,14 @@
 }
 .post-event div:nth-child(2) .postIcon:hover {
   fill: #17bf63;
-  background-color: var(--hover-blue-color);
+  background-color: rgba(23, 191, 99, 0.1);
 }
 .post-event div:nth-child(2) .postIcon:hover + span {
   color: #17bf63;
 }
 .post-event div:nth-child(3) .postIcon:hover {
   fill: #e0245e;
-  background-color: var(--hover-blue-color);
+  background-color: rgba(224, 36, 94, 0.1);
 }
 .post-event div:nth-child(3) .postIcon:hover + span {
   color: #e0245e;

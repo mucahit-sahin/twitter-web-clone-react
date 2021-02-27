@@ -1,0 +1,79 @@
+.profileDetailCard {
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  background-color: var(--main-bg-color);
+  border-radius: 30px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 1px 1px 8px var(--gray);
+}
+.profileDetailCardActive {
+  display: none;
+}
+
+.profileDetailCard > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+}
+.profileDetailCard > div:nth-child(1) > div:nth-child(1) {
+  width: 64px;
+  height: 64px;
+}
+.profileDetailCard > div:nth-child(1) > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  height: min-content;
+  padding: 10px 15px;
+  margin-left: auto;
+  border: 1px solid var(--blue);
+  border-radius: 9999px;
+  color: var(--blue);
+  font-size: 15px;
+  font-weight: 700;
+}
+.profileDetailCard > div:nth-child(1) > div:nth-child(2):hover {
+  background-color: var(--hover-blue-color);
+}
+.profileDetailCard > div:nth-child(2) {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+.profileDetailCard > div:nth-child(2) > span {
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+}
+.profileDetailCard > div:nth-child(2) > svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+}
+.profileDetailCard > div:nth-child(3) > span {
+  color: var(--gray);
+  font-size: 15px;
+}
+.profileDetailCard > div:nth-child(4) > span {
+  color: white;
+  font-size: 15px;
+}
+.profileDetailCard > div:nth-child(5) {
+  margin-top: 10px;
+}
+.profileDetailCard > div:nth-child(5) > span {
+  margin-right: 15px;
+}
+.profileDetailCard > div:nth-child(5) > span > span:nth-child(1) {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  margin-right: 5px;
+}
+.profileDetailCard > div:nth-child(5) > span > span:nth-child(2) {
+  color: var(--gray);
+  font-size: 15px;
+}
