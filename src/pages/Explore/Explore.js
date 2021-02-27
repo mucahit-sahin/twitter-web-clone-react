@@ -13,7 +13,7 @@ function Explore() {
       <Sidebar />
       <div className="feed">
         <div className="exploreSearch">
-          <SearchInput />
+          <SearchInput placeholder="Search Twitter" />
           <SettingsIcon />
         </div>
         <Topics />

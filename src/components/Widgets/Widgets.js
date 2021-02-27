@@ -7,7 +7,7 @@ import FriendSuggestions from "./FriendSuggestions/FriendSuggestions";
 function Widgets() {
   return (
     <div className="widgets">
-      <SearchInput />
+      <SearchInput placeholder="Search Twitter" />
       <Topics />
       <FriendSuggestions />
     </div>

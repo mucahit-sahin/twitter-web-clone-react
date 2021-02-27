@@ -1,0 +1,47 @@
+.lastChat {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  border-bottom: 1px solid var(--border-color);
+}
+.lastChat:hover {
+  background-color: var(--hover-color);
+}
+.lastChat > div:nth-child(1) > .MuiAvatar-root {
+  width: 48px;
+  height: 48px;
+}
+.lastChat > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+  width: 100%;
+}
+.lastChat > div:nth-child(2) > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+
+.lastChat > div:nth-child(2) > div:nth-child(1) > span:nth-child(1) {
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.lastChat > div:nth-child(2) > div > span:nth-child(1) > svg {
+  width: 19px;
+  height: 19px;
+  fill: white;
+}
+.lastChat > div:nth-child(2) > div > span:nth-child(2),
+.lastChat > div:nth-child(2) > div > span:nth-child(3),
+.lastChat > div:nth-child(2) > span {
+  color: var(--gray);
+  font-weight: normal;
+  margin-right: 5px;
+}
+.lastChat > div:nth-child(2) > div > span:nth-child(3) {
+  margin-left: auto;
+  margin-right: 0px;
+}
