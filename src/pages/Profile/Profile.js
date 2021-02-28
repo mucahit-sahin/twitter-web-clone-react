@@ -11,6 +11,7 @@ import BackIcon from "@material-ui/icons/KeyboardBackspace";
 import ScheduleIcon from "@material-ui/icons/CalendarToday";
 import { Avatar } from "@material-ui/core";
 import { useSelector } from "react-redux";
+import Links from "../../components/Widgets/Links/Links";
 
 const Profile = () => {
   const [category, setCategory] = React.useState(1);
@@ -102,6 +103,7 @@ const Profile = () => {
         <SearchInput placeholder="Search Twitter" />
         <FriendSuggestions />
         <Topics />
+        <Links />
       </div>
     </div>
   );
