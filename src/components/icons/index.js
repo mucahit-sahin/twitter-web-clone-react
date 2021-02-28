@@ -22,3 +22,7 @@ export { default as NotificationsIcon } from "./NotificationsIcon";
 export { default as BookmarkIcon } from "./BookmarkIcon";
 export { default as MoreIcon } from "./MoreIcon";
 export { default as VerifiedIcon } from "./VerifiedIcon";
+export { default as InfoIcon } from "./InfoIcon";
+export { default as CalenderIcon } from "./CalenderIcon";
+export { default as MessageLikeIcon } from "./MessageLikeIcon";
+export { default as SendIcon } from "./SendIcon";

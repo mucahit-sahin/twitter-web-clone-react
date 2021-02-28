@@ -7,7 +7,9 @@
   --border-color: #38444d;
   --gray: #8899a6;
   --input-background-color: #253341;
+  --from-message-color: #3d5466;
 }
 body {
   background-color: var(--main-bg-color);
+  overflow-y: hidden;
 }

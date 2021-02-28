@@ -1,5 +1,6 @@
 import React from "react";
 import BottomSidebar from "../../components/BottomSidebar/BottomSidebar";
+import Chat from "../../components/Chat/Chat";
 import { MessagesIcon } from "../../components/icons";
 import LastChat from "../../components/LastChat/LastChat";
 import Sidebar from "../../components/Sidebar/Sidebar";
@@ -37,6 +38,7 @@ const Messages = () => {
         </div>
         <BottomSidebar />
       </div>
+      <Chat />
     </div>
   );
 };

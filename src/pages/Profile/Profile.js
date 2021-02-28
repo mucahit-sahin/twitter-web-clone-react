@@ -99,7 +99,7 @@ const Profile = () => {
         <BottomSidebar />
       </section>
       <div className="widgets">
-        <SearchInput />
+        <SearchInput placeholder="Search Twitter" />
         <FriendSuggestions />
         <Topics />
       </div>

@@ -1,0 +1,102 @@
+.chat {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  border-right: 0.5px var(--border-color) solid;
+}
+.chatHeader {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  border-bottom: 0.5px solid var(--border-color);
+  padding-left: 15px;
+}
+.chatHeader > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+.chatHeader > div > span:nth-child(1) {
+  color: white;
+  font-size: 19px;
+  font-weight: 800;
+}
+.chatHeader > div > span:nth-child(2) {
+  color: var(--gray);
+  font-size: 13px;
+}
+.chatHeader > svg {
+  width: 23px;
+  height: 23px;
+  fill: var(--blue);
+  margin-left: auto;
+  margin: 8px 10px 8px auto;
+  padding: 8px;
+  border-radius: 9999px;
+}
+.chatHeader > svg:hover {
+  background-color: var(--hover-blue-color);
+}
+.chatRoom {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  width: inherit;
+}
+.chatRoom::-webkit-scrollbar {
+  display: none;
+}
+.chatInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 15px;
+  padding: 15px;
+  border-bottom: 0.5px var(--border-color) solid;
+}
+.chatInfo > div:nth-child(1) > span:nth-child(1),
+.chatInfo div:nth-child(3) span span:nth-child(1) {
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+}
+.chatInfo > div:nth-child(1) > span:nth-child(2),
+.chatInfo div:nth-child(3) span span:nth-child(2) {
+  color: var(--gray);
+  font-size: 15px;
+}
+.chatInfo > span {
+  color: white;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+.chatInfo div:nth-child(3) span span:nth-child(1) {
+  margin-right: 5px;
+}
+.chatInfo div:nth-child(3) span:nth-child(1) {
+  margin-right: 20px;
+}
+.chatInfo > span:nth-child(4) > svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--gray);
+  margin-right: 5px;
+}
+.chatInfo > span:nth-child(4) {
+  color: var(--gray);
+  display: flex;
+  align-items: center;
+}
+.chatMessages {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+@media (min-width: 0) and (max-width: 1000px) {
+  .chat {
+    display: none;
+  }
+}
