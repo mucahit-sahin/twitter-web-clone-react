@@ -5,8 +5,8 @@
 }
 
 .panel {
-  margin: 15px auto auto;
-  width: 398px;
+  margin: 15px auto auto auto;
+  max-width: 400px;
   padding: 0px 15px;
 }
 

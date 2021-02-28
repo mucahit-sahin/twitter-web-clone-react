@@ -9,10 +9,10 @@ const Chat = () => {
   return (
     <div className="chat">
       <div className="chatHeader">
-        <Avatar src="https://avatars2.githubusercontent.com/u/38807255?s=460&u=deb087d587be7f6a4000e4e710ec4d1daa6fde84&v=4" />
+        <Avatar src="https://pbs.twimg.com/profile_images/1325847629192957952/v3xrjDtd_200x200.jpg" />
         <div>
-          <span>Mücahit Şahin</span>
-          <span>@mucahitsah</span>
+          <span>Cihat Necati</span>
+          <span>@cnecati</span>
         </div>
         <InfoIcon />
       </div>
@@ -50,13 +50,8 @@ const Chat = () => {
           <FromMessage />
           <MyMessage />
           <FromMessage />
-          <MyMessage />
-          <FromMessage />
-          <MyMessage />
-          <FromMessage />
-          <MyMessage />
-          <ChatInputs />
         </div>
+        <ChatInputs />
       </div>
     </div>
   );

@@ -3,6 +3,7 @@
   flex: 1;
   flex-direction: row;
   height: 100%;
+  overflow-y: scroll;
 }
 
 .col1 {
