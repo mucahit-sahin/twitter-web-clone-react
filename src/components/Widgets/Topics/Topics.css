@@ -1,7 +1,7 @@
 .widgetsTopics {
   background-color: var(--element-bg-color);
-  margin-top: 5px;
-  border-radius: 10px;
+  margin-top: 15px;
+  border-radius: 20px;
 }
 .widgetsTopicsHeader {
   display: flex;

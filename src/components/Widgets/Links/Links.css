@@ -1,0 +1,17 @@
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 15px;
+}
+.links span {
+  color: var(--gray);
+  font-size: 13px;
+  margin-right: 12px;
+}
+.links span:hover {
+  text-decoration: underline;
+}
+.links svg {
+  font-size: 13px;
+}

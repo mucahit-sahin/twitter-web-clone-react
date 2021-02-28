@@ -19,7 +19,7 @@ function Login() {
         <Link to="/home" className="loginBtn">
           <span className="loginText">Giriş yap</span>
         </Link>
-        <div className="links">
+        <div className="loginLinks">
           <a href="">
             <span className="link">Şifreni mi unuttun?</span>
           </a>

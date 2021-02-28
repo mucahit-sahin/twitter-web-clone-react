@@ -3,6 +3,7 @@ import "./Widgets.css";
 import SearchInput from "./SearchInput/SearchInput";
 import Topics from "./Topics/Topics";
 import FriendSuggestions from "./FriendSuggestions/FriendSuggestions";
+import Links from "./Links/Links";
 
 function Widgets() {
   return (
@@ -10,6 +11,7 @@ function Widgets() {
       <SearchInput placeholder="Search Twitter" />
       <Topics />
       <FriendSuggestions />
+      <Links />
     </div>
   );
 }
