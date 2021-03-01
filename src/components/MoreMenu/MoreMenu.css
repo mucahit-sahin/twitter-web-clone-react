@@ -1,0 +1,38 @@
+.unVisible {
+  display: none;
+}
+.moreMenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0px;
+  z-index: 500;
+  background-color: var(--main-bg-color);
+  box-shadow: 0px 0px 5px gray;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+.moreMenu::-webkit-scrollbar {
+  display: none;
+}
+.moreMenu > div:nth-child(5) {
+  border-bottom: 0.5px solid var(--gray);
+}
+.moreMenu > div:nth-child(1) {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.moreMenu > div:nth-child(9) {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+@media (min-width: 0) and (max-width: 1250px) {
+  .moreMenu {
+    position: fixed;
+    max-height: 100vh;
+    min-height: min-content;
+    top: 0;
+    left: 0;
+    bottom: none;
+  }
+}

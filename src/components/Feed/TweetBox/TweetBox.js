@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./TweetBox.css";
-import { Avatar, Button } from "@material-ui/core";
+import { Avatar } from "@material-ui/core";
 import PhotoIcon from "../../icons/PhotoIcon";
 import GifIcon from "../../icons/GifIcon";
 import SurveyIcon from "../../icons/SurveyIcon";

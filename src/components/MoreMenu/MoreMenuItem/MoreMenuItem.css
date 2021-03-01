@@ -1,0 +1,19 @@
+.moreMenuItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 200px;
+}
+.moreMenuItem > svg {
+  height: 19px;
+  width: 19px;
+  fill: var(--gray);
+  padding: 15px;
+}
+.moreMenuItem > span {
+  color: white;
+  font-size: 15px;
+}
+.moreMenuItem:hover {
+  background-color: var(--hover-color);
+}

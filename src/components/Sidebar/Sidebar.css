@@ -89,6 +89,10 @@
   display: flex;
   align-items: center;
 }
+.moreMenuButton {
+  padding: 5px;
+  position: relative;
+}
 
 @media (min-width: 0) and (max-width: 1250px) {
   .sidebarItem > span {
