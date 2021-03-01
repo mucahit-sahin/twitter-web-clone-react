@@ -12,7 +12,7 @@ import ProfileCard from "../../ProfileCard/ProfileCard";
 function Post({ userimage, username, displayName, text, shareImage, date }) {
   const [isVisibleProfileCard, setIsVisibleProfileCard] = React.useState(false);
   return (
-    <div className="post">
+    <div className="post" onMouseLeave={() => setIsVisibleProfileCard(false)}>
       <ProfileCard active={isVisibleProfileCard && true} />
       <div>
         <Avatar src={userimage} />
@@ -25,7 +25,7 @@ function Post({ userimage, username, displayName, text, shareImage, date }) {
             onMouseLeave={() => {
               setTimeout(function () {
                 setIsVisibleProfileCard(false);
-              }, 500);
+              }, 1000);
             }}
           >
             {displayName}
