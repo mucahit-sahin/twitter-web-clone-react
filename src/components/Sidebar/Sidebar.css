@@ -90,10 +90,17 @@
   align-items: center;
 }
 .moreMenuButton {
-  padding: 5px;
   position: relative;
 }
-
+.closeMoreMenuPanel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 499;
+  background-color: transparent;
+}
 @media (min-width: 0) and (max-width: 1250px) {
   .sidebarItem > span {
     display: none;

@@ -79,6 +79,7 @@ function Sidebar() {
       >
         <SidebarItem text="More" Icon={MoreIcon} />
         <MoreMenu active={moreActive} />
+        {moreActive && <div className="closeMoreMenuPanel" />}
       </div>
       <div className="tweetButton">
         <SetTweetIcon className="setTweetIcon" />

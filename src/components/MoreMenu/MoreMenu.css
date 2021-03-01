@@ -8,8 +8,8 @@
   bottom: 0px;
   z-index: 500;
   background-color: var(--main-bg-color);
-  box-shadow: 0px 0px 5px gray;
-  border-radius: 10px;
+  box-shadow: 0px 0px 5px var(--gray);
+  border-radius: 5px;
   overflow-y: scroll;
 }
 .moreMenu::-webkit-scrollbar {
@@ -17,14 +17,6 @@
 }
 .moreMenu > div:nth-child(5) {
   border-bottom: 0.5px solid var(--gray);
-}
-.moreMenu > div:nth-child(1) {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-.moreMenu > div:nth-child(9) {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 @media (min-width: 0) and (max-width: 1250px) {
   .moreMenu {
