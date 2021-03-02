@@ -7,16 +7,31 @@ import Post from "../../components/Feed/Post/Post";
 import FollowedYou from "../../components/FollowedYou/FollowedYou";
 import LikedYou from "../../components/LikedYou/LikedYou";
 import BottomSidebar from "../../components/BottomSidebar/BottomSidebar";
+import { Avatar } from "@material-ui/core";
+import DrawerBar from "../../components/DrawerBar/DrawerBar";
 
 function Notifications() {
   const [isAll, setIsAll] = React.useState(true);
+  const [isDrawerBar, setIsDrawerBar] = React.useState(false);
   document.title = "Notifications / Twitter";
   return (
     <div className="home">
       <Sidebar />
       <div className="feed">
+        {isDrawerBar && (
+          <>
+            <div
+              onClick={() => setIsDrawerBar(false)}
+              className="drawerBarPanel"
+            />
+            <DrawerBar />
+          </>
+        )}
         <div className="notificationsHeader">
           <div className="notificationsTitle">
+            <div onClick={() => setIsDrawerBar(true)}>
+              <Avatar src="https://avatars.githubusercontent.com/u/38807255?s=460&u=deb087d587be7f6a4000e4e710ec4d1daa6fde84&v=4" />
+            </div>
             <span>Notifications</span>
             <SettingsIcon />
           </div>

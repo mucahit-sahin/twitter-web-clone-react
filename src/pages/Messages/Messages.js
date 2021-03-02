@@ -1,6 +1,8 @@
+import { Avatar } from "@material-ui/core";
 import React from "react";
 import BottomSidebar from "../../components/BottomSidebar/BottomSidebar";
 import Chat from "../../components/Chat/Chat";
+import DrawerBar from "../../components/DrawerBar/DrawerBar";
 import { MessagesIcon } from "../../components/icons";
 import LastChat from "../../components/LastChat/LastChat";
 import Sidebar from "../../components/Sidebar/Sidebar";
@@ -8,11 +10,24 @@ import SearchInput from "../../components/Widgets/SearchInput/SearchInput";
 import "./Messages.css";
 
 const Messages = () => {
+  const [isDrawerBar, setIsDrawerBar] = React.useState(false);
   return (
     <div className="home">
       <Sidebar />
       <div className="messages">
+        {isDrawerBar && (
+          <>
+            <div
+              onClick={() => setIsDrawerBar(false)}
+              className="drawerBarPanel"
+            />
+            <DrawerBar />
+          </>
+        )}
         <div className="messagesHeader">
+          <div onClick={() => setIsDrawerBar(true)}>
+            <Avatar src="https://avatars.githubusercontent.com/u/38807255?s=460&u=deb087d587be7f6a4000e4e710ec4d1daa6fde84&v=4" />
+          </div>
           <span>Messages</span>
           <MessagesIcon />
         </div>

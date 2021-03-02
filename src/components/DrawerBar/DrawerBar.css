@@ -1,0 +1,99 @@
+@media (min-width: 0) and (max-width: 450px) {
+  .drawerBar {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 100vh;
+    position: absolute;
+    background-color: var(--main-bg-color);
+    z-index: 1001;
+  }
+  .drawerBarHeader {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    border-bottom: 0.5px solid var(--border-color);
+  }
+  .drawerBarHeader > span:nth-child(1) {
+    font-size: 19px;
+    font-weight: 800;
+    color: white;
+  }
+  .drawerBarHeader > span:nth-child(2) {
+    font-size: 19px;
+    font-weight: 800;
+    color: white;
+    margin-left: auto;
+  }
+  .draweBarScroll {
+    overflow-y: scroll;
+    height: 100vh;
+  }
+  .drawerBarProfile {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    overflow-y: scroll;
+  }
+  .drawerBarProfile > div {
+    display: flex;
+    flex-direction: row;
+  }
+  .drawerBarProfile .MuiAvatar-root {
+    width: 40px;
+    height: 40px;
+  }
+  .drawerBarProfile svg {
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    fill: var(--blue);
+    border-radius: 9999px;
+  }
+  .drawerBarProfile svg:hover {
+    background-color: var(--hover-color);
+  }
+  .drawerBarProfile > span:nth-child(2) {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+  }
+  .drawerBarProfile > span:nth-child(3) {
+    font-size: 15px;
+    color: var(--gray);
+  }
+  .drawerBarProfile div:nth-child(4) {
+    margin-top: 20px;
+  }
+  .drawerBarProfile div:nth-child(4) span {
+    margin-right: 15px;
+  }
+  .drawerBarProfile div:nth-child(4) span span:nth-child(1) {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 15px;
+    margin-right: 5px;
+  }
+  .drawerBarProfile div:nth-child(4) span span:nth-child(2) {
+    color: var(--gray);
+    font-size: 15px;
+  }
+  .draweBarScroll > .moreMenuItem:nth-child(7),
+  .draweBarScroll > .moreMenuItem:nth-child(9),
+  .draweBarScroll > .moreMenuItem:nth-child(11),
+  .draweBarScroll > .moreMenuItem:nth-child(14) {
+    border-bottom: 0.2px solid var(--gray);
+  }
+  .draweBarScroll > .moreMenuItem:nth-child(15) > svg {
+    display: none;
+  }
+  .draweBarScroll > .moreMenuItem:nth-child(15) > span {
+    padding: 15px;
+  }
+}
+@media only screen and (min-width: 451px) {
+  .drawerBar {
+    display: none;
+  }
+} ;

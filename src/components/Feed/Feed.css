@@ -15,7 +15,7 @@
   background-color: var(--main-bg-color);
   z-index: 100;
   border-bottom: 0.5px var(--border-color) solid;
-  padding: 15px;
+  padding: 0px 15px;
   display: flex;
   flex: 1;
   align-items: center;
@@ -34,12 +34,16 @@
 .homeStars {
   fill: var(--blue);
   padding: 8px;
+  margin: 8px 0px;
 }
 .homeStars:hover {
   background-color: var(--hover-blue-color);
   border-radius: 9999px;
 }
 
+.feed-header .MuiAvatar-root {
+  display: none;
+}
 @media (min-width: 0) and (max-width: 1000px) {
   .feed {
     flex: 0.9;
@@ -49,5 +53,22 @@
   .feed {
     flex: 1;
     margin: 0px;
+  }
+  .feed-header .MuiAvatar-root {
+    display: block;
+    margin-right: 20px;
+    height: 32px;
+    width: 32px;
+  }
+  .feed > .tweetbox,
+  .feed > .bottomBorder {
+    display: none;
+  }
+  .drawerBarPanel {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--gray) 0.8;
+    position: absolute;
+    z-index: 1000;
   }
 }

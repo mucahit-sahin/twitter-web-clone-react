@@ -5,12 +5,27 @@ import Post from "./Post/Post";
 import HomeStars from "../icons/HomeStars";
 import BottomSidebar from "../BottomSidebar/BottomSidebar";
 import { useSelector } from "react-redux";
+import { Avatar } from "@material-ui/core";
+import DrawerBar from "../DrawerBar/DrawerBar";
 
 function Feed() {
   const posts = useSelector((state) => state.posts);
+  const [isDrawerBar, setIsDrawerBar] = React.useState(false);
   return (
     <section className="feed">
+      {isDrawerBar && (
+        <>
+          <div
+            onClick={() => setIsDrawerBar(false)}
+            className="drawerBarPanel"
+          />
+          <DrawerBar />
+        </>
+      )}
       <div className="feed-header">
+        <div onClick={() => setIsDrawerBar(true)}>
+          <Avatar src="https://avatars.githubusercontent.com/u/38807255?s=460&u=deb087d587be7f6a4000e4e710ec4d1daa6fde84&v=4" />
+        </div>
         <div className="feed-headerText">
           <span>Home</span>
         </div>

@@ -7,13 +7,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-left: 15px;
   border-bottom: 1px solid var(--border-color);
 }
 .messagesHeader > span {
   font-size: 19px;
   font-weight: 800;
   color: white;
-  margin-left: 15px;
 }
 .messagesHeader > svg {
   width: 23px;
@@ -25,6 +25,9 @@
 }
 .messagesHeader > svg:hover {
   background-color: var(--hover-blue-color);
+}
+.messagesHeader .MuiAvatar-root {
+  display: none;
 }
 .messagesSearchInput {
   padding: 13px;
@@ -38,5 +41,11 @@
 @media (min-width: 0) and (max-width: 450px) {
   .messages {
     flex: 1;
+  }
+  .messagesHeader .MuiAvatar-root {
+    display: block;
+    margin-right: 20px;
+    height: 32px;
+    width: 32px;
   }
 }
