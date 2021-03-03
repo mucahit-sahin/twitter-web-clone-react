@@ -21,22 +21,26 @@
 .explore-header .MuiAvatar-root {
   display: none;
 }
-.feed > .widgetsTopics {
+.feed .widgetsTopics {
   background-color: var(--main-bg-color);
   border-radius: 0px;
 }
 
-.feed > .widgetsTopics > .widgetsTopicMore {
+.feed .widgetsTopics > .widgetsTopicMore {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-bottom: 0.5px var(--border-color) solid;
 }
 
-.feed > .widgetsTopics > .widgetsTopicsHeader > .MuiSvgIcon-root {
+.feed .widgetsTopics > .widgetsTopicsHeader > .MuiSvgIcon-root {
   display: none;
 }
-.feed > .widgetsTopics > .widgetsTopicsHeader > span {
+.feed .widgetsTopics > .widgetsTopicsHeader > span {
   padding: 10px 0px;
+}
+.exploreContent {
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: 0) and (max-width: 450px) {
   .explore-header .MuiAvatar-root {
@@ -44,5 +48,8 @@
     margin-right: 20px;
     height: 32px;
     width: 32px;
+  }
+  .exploreContent {
+    min-height: 100vh;
   }
 }

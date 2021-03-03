@@ -32,7 +32,9 @@ function Explore() {
           <SearchInput placeholder="Search Twitter" />
           <SettingsIcon />
         </div>
-        <Topics />
+        <div className="exploreContent">
+          <Topics />
+        </div>
         <BottomSidebar />
       </div>
       <div className="widgets">

@@ -48,7 +48,7 @@
   color: var(--blue);
 }
 
-.explore-header .MuiAvatar-root {
+.notificationsTitle .MuiAvatar-root {
   display: none;
 }
 @media (min-width: 0) and (max-width: 450px) {
@@ -57,5 +57,8 @@
     margin-right: 20px;
     height: 32px;
     width: 32px;
+  }
+  article {
+    min-height: 100vh;
   }
 }
