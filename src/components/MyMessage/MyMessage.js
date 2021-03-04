@@ -3,13 +3,13 @@ import React from "react";
 import { MessageLikeIcon, MoreIcon } from "../icons";
 import "./MyMessage.css";
 
-const MyMessage = () => {
+const MyMessage = ({ message }) => {
   return (
     <div className="myMessage">
       <MessageLikeIcon />
       <MoreIcon />
       <div>
-        <span>Mesaj</span>
+        <span>{message}</span>
       </div>
     </div>
   );

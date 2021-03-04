@@ -1,7 +1,7 @@
 import React from "react";
 import "./Topics.css";
-import SettingsIcon from "@material-ui/icons/Settings";
 import TopicItem from "./TopicItem/TopicItem";
+import { SettingsIcon } from "../../icons/index";
 
 function Topics() {
   return (

@@ -19,7 +19,8 @@
 .widgetsTopicCategory > .MuiSvgIcon-root {
   margin-left: auto;
   color: var(--gray);
-  padding: 5px;
+  padding: 8px;
+  font-size: 17.5px;
   border-radius: 9999px;
 }
 .widgetsTopicCategory > .MuiSvgIcon-root:hover {

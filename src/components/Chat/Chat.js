@@ -9,7 +9,7 @@ const Chat = () => {
   return (
     <div className="chat">
       <div className="chatHeader">
-        <Avatar src="https://pbs.twimg.com/profile_images/1325847629192957952/v3xrjDtd_200x200.jpg" />
+        <Avatar src="https://pbs.twimg.com/profile_images/1348390204810407937/BmUVaYGD_400x400.jpg" />
         <div>
           <span>Cihat Necati</span>
           <span>@cnecati</span>
@@ -19,10 +19,10 @@ const Chat = () => {
       <div className="chatRoom">
         <div className="chatInfo">
           <div>
-            <span>Mücahit Şahin</span>
-            <span>@mucahitsah</span>
+            <span>Cihat Necati</span>
+            <span>@cnecati</span>
           </div>
-          <span>Junior Software Developer</span>
+          <span>Türk dili ve edebiyatı</span>
           <div>
             <span>
               <span>167</span>
@@ -39,17 +39,17 @@ const Chat = () => {
           </span>
         </div>
         <div className="chatMessages">
-          <FromMessage />
-          <MyMessage />
-          <FromMessage />
-          <MyMessage />
-          <FromMessage />
-          <MyMessage />
-          <FromMessage />
-          <MyMessage />
-          <FromMessage />
-          <MyMessage />
-          <FromMessage />
+          <FromMessage message="merhaba" />
+          <MyMessage message="merhaba" />
+          <FromMessage message="merhaba" />
+          <MyMessage message="merhaba" />
+          <FromMessage message="merhaba" />
+          <MyMessage message="merhaba" />
+          <FromMessage message="merhaba" />
+          <MyMessage message="merhaba" />
+          <FromMessage message="merhaba" />
+          <MyMessage message="merhaba" />
+          <FromMessage message="iyi akşamlar" />
         </div>
         <ChatInputs />
       </div>

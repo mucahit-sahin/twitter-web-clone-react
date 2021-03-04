@@ -56,6 +56,9 @@
   padding: 15px;
   border-bottom: 0.5px var(--border-color) solid;
 }
+.chatInfo:hover {
+  background-color: var(--hover-color);
+}
 .chatInfo > div:nth-child(1) > span:nth-child(1),
 .chatInfo div:nth-child(3) span span:nth-child(1) {
   color: white;

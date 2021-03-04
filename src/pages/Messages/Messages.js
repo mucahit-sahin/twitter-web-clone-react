@@ -11,6 +11,7 @@ import "./Messages.css";
 
 const Messages = () => {
   const [isDrawerBar, setIsDrawerBar] = React.useState(false);
+  document.title = "Messages / Twitter";
   return (
     <div className="home">
       <Sidebar />
@@ -39,7 +40,7 @@ const Messages = () => {
             username="cnecati"
             displayName="Cihat Necati"
             datetime="July 18 2019"
-            userimage="https://pbs.twimg.com/profile_images/1325847629192957952/v3xrjDtd_200x200.jpg"
+            userimage="https://pbs.twimg.com/profile_images/1348390204810407937/BmUVaYGD_400x400.jpg"
             lastMessage="İyi Akşamlar"
             verified={true}
           />

@@ -12,6 +12,7 @@ import { Avatar } from "@material-ui/core";
 
 function Explore() {
   const [isDrawerBar, setIsDrawerBar] = React.useState(false);
+  document.title = "Explore / Twitter";
   return (
     <div className="home">
       <Sidebar />

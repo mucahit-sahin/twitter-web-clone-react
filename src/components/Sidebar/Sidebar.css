@@ -132,9 +132,8 @@
     padding: 10px;
   }
   .profileCard {
-    left: 0px;
-    align-items: center;
     padding: 0px;
+    width: min-content;
   }
   .profileCardImage {
     margin-left: 0px !important;
@@ -144,12 +143,6 @@
     display: none;
   }
 }
-@media (max-height: 850) {
-  .profileCard {
-    margin-top: 15px;
-  }
-}
-
 @media (min-width: 0) and (max-width: 450px) {
   .sidebar {
     display: none;
