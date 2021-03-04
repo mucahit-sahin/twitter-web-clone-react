@@ -31,6 +31,10 @@
   border-radius: 9999px;
   min-width: 70%;
 }
+.chatTextInputFocus {
+  background-color: transparent;
+  border: 1px solid var(--blue);
+}
 .chatTextInput > input {
   width: 100%;
   margin-left: 5px;
@@ -38,7 +42,8 @@
   border: none;
   height: min-content;
   color: var(--gray);
-  background-color: var(--input-background-color);
+  background-color: transparent;
+  outline: none;
 }
 .chatInputs > svg:nth-child(4) {
   margin-left: auto;
