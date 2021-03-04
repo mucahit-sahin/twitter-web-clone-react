@@ -17,12 +17,20 @@
 }
 .widgetsSearchInput {
   width: 100%;
-  background-color: var(--input-background-color);
+  background-color: transparent;
   border: none;
   font-size: 15px;
   color: white;
+  outline: none;
 }
 .widgetsSearchInput::placeholder {
   color: #5e8ca6;
   font-size: 15px;
+}
+.widgetsSearchFocus {
+  border: 1px solid var(--blue);
+  background-color: var(--main-bg-color);
+}
+.widgetsSearchIconFocus {
+  color: var(--blue);
 }
