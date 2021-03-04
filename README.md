@@ -6,7 +6,7 @@ Merhabalar bu projemde twitter web sitesini gerçekleştirmeye çalıştım. Bun
 
 Projeyi indirdikten sonra terminale <b>"npm install"</b> komutu girilerek projede kullanılan kütüphaneler yüklenilir. Bu işlemden sonra <b>"npm start"</b> komutu girilerek proje çalıştırılır.
 
-## Sayfalar - <a href="https://twitter-web-react.netlify.app">Canlı önizlemek için tıklayınız</a>
+## Sayfalar - <a href="https://twitter-web-clone.netlify.app">Canlı önizlemek için tıklayınız</a>
 
 Sayfalar arası geçişi buttonlara tıklayarak sağlayabilirsiniz. Inputları doldurmanıza gerek yoktur. Sadece fronend kısmı yapılmıştır, veritabanı işlemleri yoktur.
 
