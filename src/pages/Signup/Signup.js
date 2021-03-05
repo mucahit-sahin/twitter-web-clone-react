@@ -5,10 +5,6 @@ import { Link } from "react-router-dom";
 import TextInput from "../../components/TextInput/TextInput";
 
 function Signup() {
-  const [clicked, setClicked] = React.useState(false);
-  function inputFocus() {
-    setClicked(true);
-  }
   return (
     <div className="signUpContainer">
       <div className="card">

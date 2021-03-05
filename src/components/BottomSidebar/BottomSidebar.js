@@ -10,7 +10,7 @@ import {
 } from "../icons/index";
 
 const BottomSidebar = () => {
-  const [location, setLocation] = React.useState(useLocation().pathname);
+  const [location] = React.useState(useLocation().pathname);
   return (
     <footer className="bottomSidebar">
       <div>
@@ -18,7 +18,7 @@ const BottomSidebar = () => {
           <SidebarItem
             text="Home"
             Icon={HomeIcon}
-            active={location == "/home" && true}
+            active={location === "/home" && true}
           />
         </Link>
       </div>
@@ -27,7 +27,7 @@ const BottomSidebar = () => {
           <SidebarItem
             text="Explore"
             Icon={ExploreIcon}
-            active={location == "/explore" && true}
+            active={location === "/explore" && true}
           />
         </Link>
       </div>
@@ -36,7 +36,7 @@ const BottomSidebar = () => {
           <SidebarItem
             text="Notifications"
             Icon={NotificationsIcon}
-            active={location == "/Notifications" && true}
+            active={location === "/Notifications" && true}
           />
         </Link>
       </div>
@@ -45,7 +45,7 @@ const BottomSidebar = () => {
           <SidebarItem
             text="Messages"
             Icon={MessagesIcon}
-            active={location == "/Messages" && true}
+            active={location === "/Messages" && true}
           />
         </Link>
       </div>

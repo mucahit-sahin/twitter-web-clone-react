@@ -20,11 +20,11 @@ function Login() {
           <span className="loginText">Giriş yap</span>
         </Link>
         <div className="loginLinks">
-          <a href="">
+          <a href="/">
             <span className="link">Şifreni mi unuttun?</span>
           </a>
           <span className="point">.</span>
-          <a href="">
+          <a href="/">
             <span className="link">Twitter'a kaydol</span>
           </a>
         </div>

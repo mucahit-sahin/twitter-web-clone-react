@@ -19,7 +19,7 @@ import { Link, useLocation } from "react-router-dom";
 import MoreMenu from "../MoreMenu/MoreMenu";
 
 function Sidebar() {
-  const [location, setLocation] = React.useState(useLocation().pathname);
+  const [location] = React.useState(useLocation().pathname);
   const [moreActive, setMoreActive] = React.useState(false);
   return (
     <div className="sidebar">
@@ -28,49 +28,49 @@ function Sidebar() {
         <SidebarItem
           text="Home"
           Icon={HomeIcon}
-          active={location == "/home" && true}
+          active={location === "/home" && true}
         />
       </Link>
       <Link to="/explore" style={{ textDecoration: "none" }}>
         <SidebarItem
           text="Explore"
           Icon={ExploreIcon}
-          active={location == "/explore" && true}
+          active={location === "/explore" && true}
         />
       </Link>
       <Link to="/Notifications" style={{ textDecoration: "none" }}>
         <SidebarItem
           text="Notifications"
           Icon={NotificationsIcon}
-          active={location == "/Notifications" && true}
+          active={location === "/Notifications" && true}
         />
       </Link>
       <Link to="/Messages" style={{ textDecoration: "none" }}>
         <SidebarItem
           text="Messages"
           Icon={MessagesIcon}
-          active={location == "/Messages" && true}
+          active={location === "/Messages" && true}
         />
       </Link>
       <Link to="/Bookmarks" style={{ textDecoration: "none" }}>
         <SidebarItem
           text="Bookmarks"
           Icon={BookmarkIcon}
-          active={location == "/Bookmarks" && true}
+          active={location === "/Bookmarks" && true}
         />
       </Link>
       <Link to="/Lists" style={{ textDecoration: "none" }}>
         <SidebarItem
           text="Lists"
           Icon={ListIcon}
-          active={location == "/Lists" && true}
+          active={location === "/Lists" && true}
         />
       </Link>
       <Link to="/Profile" style={{ textDecoration: "none" }}>
         <SidebarItem
           text="Profile"
           Icon={UserIcon}
-          active={location == "/Profile" && true}
+          active={location === "/Profile" && true}
         />
       </Link>
       <div

@@ -1,4 +1,3 @@
-import { Avatar } from "@material-ui/core";
 import React from "react";
 import { MessageLikeIcon, MoreIcon } from "../icons";
 import "./MyMessage.css";

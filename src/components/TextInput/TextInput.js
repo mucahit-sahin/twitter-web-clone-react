@@ -6,7 +6,7 @@ function TextInput({ text }) {
   const [inputFocus, setInputFocus] = React.useState(false);
   const [value, setValue] = React.useState("");
   function isValueSet() {
-    if (value == "") {
+    if (value === "") {
       setClicked(false);
     } else {
       setClicked(true);

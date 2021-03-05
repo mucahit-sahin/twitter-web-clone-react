@@ -1,6 +1,5 @@
 import React from "react";
 import "./Links.css";
-import { MoreIcon } from "../../icons";
 import { MoreHoriz } from "@material-ui/icons";
 
 const Links = () => {

@@ -1,5 +1,4 @@
 import React from "react";
-import BottomSidebar from "../../components/BottomSidebar/BottomSidebar";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Widgets from "../../components/Widgets/Widgets";
 import "./Bookmarks.css";

@@ -59,25 +59,25 @@ const Profile = () => {
           </div>
           <div className="profileCategory">
             <div
-              className={category == 1 && "profileCategoryActive"}
+              className={category === 1 && "profileCategoryActive"}
               onClick={() => setCategory(1)}
             >
               <span>Tweets</span>
             </div>
             <div
-              className={category == 2 && "profileCategoryActive"}
+              className={category === 2 && "profileCategoryActive"}
               onClick={() => setCategory(2)}
             >
               <span>Tweets & replies</span>
             </div>
             <div
-              className={category == 3 && "profileCategoryActive"}
+              className={category === 3 && "profileCategoryActive"}
               onClick={() => setCategory(3)}
             >
               <span>Media</span>
             </div>
             <div
-              className={category == 4 && "profileCategoryActive"}
+              className={category === 4 && "profileCategoryActive"}
               onClick={() => setCategory(4)}
             >
               <span>Likes</span>
