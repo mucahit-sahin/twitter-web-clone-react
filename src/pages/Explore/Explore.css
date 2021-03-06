@@ -9,13 +9,15 @@
 .explore-header > .widgetsSearch {
   padding: 5px 18px;
 }
-.explore-header > .MuiSvgIcon-root {
-  color: var(--blue);
+.explore-header > svg {
+  fill: var(--blue);
   padding: 5px;
+  width: 23px;
+  height: 23px;
   border-radius: 9999px;
   margin-left: 10px;
 }
-.explore-header > .MuiSvgIcon-root:hover {
+.explore-header > svg:hover {
   background-color: var(--hover-blue-color);
 }
 .explore-header .MuiAvatar-root {
@@ -24,6 +26,7 @@
 .feed .widgetsTopics {
   background-color: var(--main-bg-color);
   border-radius: 0px;
+  margin-top: 0px;
 }
 
 .feed .widgetsTopics > .widgetsTopicMore {
@@ -32,7 +35,7 @@
   border-bottom: 0.5px var(--border-color) solid;
 }
 
-.feed .widgetsTopics > .widgetsTopicsHeader > .MuiSvgIcon-root {
+.feed .widgetsTopics > .widgetsTopicsHeader > svg {
   display: none;
 }
 .feed .widgetsTopics > .widgetsTopicsHeader > span {

@@ -13,5 +13,5 @@ body {
   background-color: var(--main-bg-color);
   overflow-y: hidden;
   width: 100vw;
-  height: 100vh;
+  box-sizing: border-box;
 }

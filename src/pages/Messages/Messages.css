@@ -1,5 +1,5 @@
 .messages {
-  flex: 0.3;
+  flex: 0.4;
   border-right: 0.5px var(--border-color) solid;
   border-left: 0.5px var(--border-color) solid;
 }
@@ -35,7 +35,7 @@
 }
 @media (min-width: 0) and (max-width: 1000px) {
   .messages {
-    flex: 0.9;
+    flex: 1;
   }
 }
 @media (min-width: 0) and (max-width: 450px) {

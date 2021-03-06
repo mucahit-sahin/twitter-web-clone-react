@@ -1,21 +1,20 @@
 import React from "react";
 import "./Explore.css";
-import Sidebar from "../../components/Sidebar/Sidebar";
 import FriendSuggestions from "../../components/Widgets/FriendSuggestions/FriendSuggestions";
 import SearchInput from "../../components/Widgets/SearchInput/SearchInput";
-import SettingsIcon from "@material-ui/icons/Settings";
+import { SettingsIcon } from "../../components/icons";
 import Topics from "../../components/Widgets/Topics/Topics";
 import BottomSidebar from "../../components/BottomSidebar/BottomSidebar";
 import Links from "../../components/Widgets/Links/Links";
 import DrawerBar from "../../components/DrawerBar/DrawerBar";
 import { Avatar } from "@material-ui/core";
+import HomeBox from "../../components/HomeBox/HomeBox";
 
 function Explore() {
   const [isDrawerBar, setIsDrawerBar] = React.useState(false);
   document.title = "Explore / Twitter";
   return (
-    <div className="home">
-      <Sidebar />
+    <HomeBox>
       <div className="feed">
         {isDrawerBar && (
           <>
@@ -42,7 +41,7 @@ function Explore() {
         <FriendSuggestions />
         <Links />
       </div>
-    </div>
+    </HomeBox>
   );
 }
 

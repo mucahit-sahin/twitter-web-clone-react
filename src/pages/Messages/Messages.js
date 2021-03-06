@@ -3,9 +3,9 @@ import React from "react";
 import BottomSidebar from "../../components/BottomSidebar/BottomSidebar";
 import Chat from "../../components/Chat/Chat";
 import DrawerBar from "../../components/DrawerBar/DrawerBar";
+import HomeBox from "../../components/HomeBox/HomeBox";
 import { MessagesIcon } from "../../components/icons";
 import LastChat from "../../components/LastChat/LastChat";
-import Sidebar from "../../components/Sidebar/Sidebar";
 import SearchInput from "../../components/Widgets/SearchInput/SearchInput";
 import "./Messages.css";
 
@@ -13,8 +13,7 @@ const Messages = () => {
   const [isDrawerBar, setIsDrawerBar] = React.useState(false);
   document.title = "Messages / Twitter";
   return (
-    <div className="home">
-      <Sidebar />
+    <HomeBox>
       <div className="messages">
         {isDrawerBar && (
           <>
@@ -55,7 +54,7 @@ const Messages = () => {
         <BottomSidebar />
       </div>
       <Chat />
-    </div>
+    </HomeBox>
   );
 };
 

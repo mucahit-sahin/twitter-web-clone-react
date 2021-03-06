@@ -1,9 +1,9 @@
 .feed {
-  flex: 0.5;
+  flex: 0.6;
   border-right: 0.5px var(--border-color) solid;
   border-left: 0.5px var(--border-color) solid;
-  overflow-y: scroll;
   min-height: 100vh;
+  height: max-content;
 }
 
 .feed::-webkit-scrollbar {
@@ -47,7 +47,7 @@
 }
 @media (min-width: 0) and (max-width: 1000px) {
   .feed {
-    flex: 0.9;
+    flex: 1;
   }
 }
 @media (min-width: 0) and (max-width: 450px) {

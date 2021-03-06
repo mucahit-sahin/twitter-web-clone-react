@@ -1,15 +1,14 @@
 import React from "react";
 import Feed from "../../components/Feed/Feed";
-import Sidebar from "../../components/Sidebar/Sidebar";
+import HomeBox from "../../components/HomeBox/HomeBox";
 import Widgets from "../../components/Widgets/Widgets";
 import "./Home.css";
 function Home() {
   return (
-    <div className="home">
-      <Sidebar />
+    <HomeBox>
       <Feed />
       <Widgets />
-    </div>
+    </HomeBox>
   );
 }
 

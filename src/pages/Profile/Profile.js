@@ -1,7 +1,6 @@
 import React from "react";
 import "./Profile.css";
 import BottomSidebar from "../../components/BottomSidebar/BottomSidebar";
-import Sidebar from "../../components/Sidebar/Sidebar";
 import FriendSuggestions from "../../components/Widgets/FriendSuggestions/FriendSuggestions";
 import Topics from "../../components/Widgets/Topics/Topics";
 import SearchInput from "../../components/Widgets/SearchInput/SearchInput";
@@ -12,14 +11,14 @@ import ScheduleIcon from "@material-ui/icons/CalendarToday";
 import { Avatar } from "@material-ui/core";
 import { useSelector } from "react-redux";
 import Links from "../../components/Widgets/Links/Links";
+import HomeBox from "../../components/HomeBox/HomeBox";
 
 const Profile = () => {
   const [category, setCategory] = React.useState(1);
   const posts = useSelector((state) => state.posts);
   document.title = "Mücahit Şahin (@mucahitsahin6) / Twitter";
   return (
-    <div className="home">
-      <Sidebar />
+    <HomeBox>
       <section className="feed">
         <div className="profileHeader">
           <BackIcon />
@@ -105,7 +104,7 @@ const Profile = () => {
         <Topics />
         <Links />
       </div>
-    </div>
+    </HomeBox>
   );
 };
 

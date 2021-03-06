@@ -1,16 +1,15 @@
 import React from "react";
-import Sidebar from "../../components/Sidebar/Sidebar";
+import HomeBox from "../../components/HomeBox/HomeBox";
 import Widgets from "../../components/Widgets/Widgets";
 import "./Lists.css";
 const Lists = () => {
   return (
-    <div className="home">
-      <Sidebar />
+    <HomeBox>
       <div className="feed">
         <span>Bookmarks</span>
       </div>
       <Widgets />
-    </div>
+    </HomeBox>
   );
 };
 

@@ -1,6 +1,5 @@
 import React from "react";
 import "./Notifications.css";
-import Sidebar from "../../components/Sidebar/Sidebar";
 import Widgets from "../../components/Widgets/Widgets";
 import SettingsIcon from "@material-ui/icons/Settings";
 import Post from "../../components/Feed/Post/Post";
@@ -9,14 +8,14 @@ import LikedYou from "../../components/LikedYou/LikedYou";
 import BottomSidebar from "../../components/BottomSidebar/BottomSidebar";
 import { Avatar } from "@material-ui/core";
 import DrawerBar from "../../components/DrawerBar/DrawerBar";
+import HomeBox from "../../components/HomeBox/HomeBox";
 
 function Notifications() {
   const [isAll, setIsAll] = React.useState(true);
   const [isDrawerBar, setIsDrawerBar] = React.useState(false);
   document.title = "Notifications / Twitter";
   return (
-    <div className="home">
-      <Sidebar />
+    <HomeBox>
       <div className="feed">
         {isDrawerBar && (
           <>
@@ -104,7 +103,7 @@ function Notifications() {
         <BottomSidebar />
       </div>
       <Widgets />
-    </div>
+    </HomeBox>
   );
 }
 

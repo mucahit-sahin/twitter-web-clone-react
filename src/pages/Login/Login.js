@@ -24,7 +24,7 @@ function Login() {
             <span className="link">Şifreni mi unuttun?</span>
           </a>
           <span className="point">.</span>
-          <a href="/">
+          <a href="/signup">
             <span className="link">Twitter'a kaydol</span>
           </a>
         </div>
