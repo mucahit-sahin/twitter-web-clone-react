@@ -39,6 +39,14 @@ const messages = [
         message: "merhaba",
         from: "mucahitsahin6",
       },
+      {
+        message: "merhaba",
+        from: "mucahitsahin6",
+      },
+      {
+        message: "merhaba",
+        from: "mucahitsahin6",
+      },
     ],
   },
 ];
