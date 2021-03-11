@@ -20,13 +20,10 @@ const Chat = () => {
     if (id) {
       let userid = id.split("-")[1];
       let messageid = id.split("/")[2];
-      console.log(messageid);
       setUser(users.find((user) => user.username === userid));
       setMessagesData(
         messages.find((message) => message.fromto === messageid).messages
       );
-      console.log(user);
-      console.log(messagesData);
     }
   }, [id]);
 

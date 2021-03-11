@@ -1,9 +1,20 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { useLocation } from "react-router";
+import { addMessageAction } from "../../store/actions/messagesActions";
 import { EmojiIcon, GifIcon, PhotoIcon, SendIcon } from "../icons";
 import "./ChatInputs.css";
 
 const ChatInputs = () => {
+  var fromto = useLocation().pathname.split("/")[2];
   const [isFocus, setIsFocus] = React.useState(false);
+  const [message, setMessage] = React.useState("");
+  const dispatch = useDispatch();
+  const sendMessage = () => {
+    if (fromto != "" && message != "") {
+      dispatch(addMessageAction(message, fromto));
+    }
+  };
   return (
     <div className="chatInputs">
       <PhotoIcon />
@@ -18,10 +29,14 @@ const ChatInputs = () => {
           placeholder="Start a new message"
           onFocus={() => setIsFocus(true)}
           onBlur={() => setIsFocus(false)}
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
         />
         <EmojiIcon />
       </div>
-      <SendIcon />
+      <div onClick={() => sendMessage()}>
+        <SendIcon />
+      </div>
     </div>
   );
 };
