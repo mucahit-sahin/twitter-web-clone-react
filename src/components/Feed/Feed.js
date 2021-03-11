@@ -9,7 +9,7 @@ import { Avatar } from "@material-ui/core";
 import DrawerBar from "../DrawerBar/DrawerBar";
 
 function Feed() {
-  const posts = useSelector((state) => state.posts);
+  const { posts } = useSelector((state) => state).posts;
   const [isDrawerBar, setIsDrawerBar] = React.useState(false);
   return (
     <section className="feed">

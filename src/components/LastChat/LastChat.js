@@ -1,5 +1,6 @@
 import { Avatar } from "@material-ui/core";
 import React from "react";
+import { Link } from "react-router-dom";
 import { VerifiedIcon } from "../icons";
 import "./LastChat.css";
 
@@ -12,7 +13,7 @@ const LastChat = ({
   verified,
 }) => {
   return (
-    <div className="lastChat">
+    <Link className="lastChat" to={`/Messages/mucahitsahin6-${username}`}>
       <div>
         <Avatar src={userimage} />
       </div>
@@ -27,7 +28,7 @@ const LastChat = ({
         </div>
         <span>{lastMessage}</span>
       </div>
-    </div>
+    </Link>
   );
 };
 

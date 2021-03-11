@@ -21,7 +21,7 @@ function App() {
       <Route path="/home" component={Home} />
       <Route path="/Explore" component={Explore} />
       <Route path="/Notifications" component={Notifications} />
-      <Route path="/Messages" component={Messages} />
+      <Route path="/Messages" component={Messages}></Route>
       <Route path="/Bookmarks" component={Bookmarks} />
       <Route path="/Lists" component={Lists} />
       <Route path="/Profile" component={Profile} />

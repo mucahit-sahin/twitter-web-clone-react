@@ -1,5 +1,6 @@
 import { Avatar } from "@material-ui/core";
 import React from "react";
+import { useLocation } from "react-router";
 import BottomSidebar from "../../components/BottomSidebar/BottomSidebar";
 import Chat from "../../components/Chat/Chat";
 import DrawerBar from "../../components/DrawerBar/DrawerBar";
@@ -11,6 +12,8 @@ import "./Messages.css";
 
 const Messages = () => {
   const [isDrawerBar, setIsDrawerBar] = React.useState(false);
+  let path = useLocation().pathname;
+  console.log(path);
   document.title = "Messages / Twitter";
   return (
     <HomeBox>
@@ -53,7 +56,13 @@ const Messages = () => {
         </div>
         <BottomSidebar />
       </div>
-      <Chat />
+      {path === "/Messages" ? (
+        <div className="chat">
+          <span>new message</span>
+        </div>
+      ) : (
+        <Chat />
+      )}
     </HomeBox>
   );
 };

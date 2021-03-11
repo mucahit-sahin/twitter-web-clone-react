@@ -7,7 +7,7 @@ import SurveyIcon from "../../icons/SurveyIcon";
 import EmojiIcon from "../../icons/EmojiIcon";
 import PlanIcon from "../../icons/PlanIcon";
 import { useDispatch } from "react-redux";
-import { addTweetAction } from "../../../store/Actions";
+import { addTweetAction } from "../../../store/actions/postActions";
 
 function TweetBox() {
   const [tweet, setTweet] = useState({
@@ -22,11 +22,11 @@ function TweetBox() {
   });
 
   const dispatch = useDispatch();
-  const addTweet = (tweet) => dispatch(addTweetAction(tweet));
   const tweetSubmit = (e) => {
     e.preventDefault();
     if (tweet.text.trim() === "") return;
-    addTweet(tweet);
+    console.log(tweet);
+    dispatch(addTweetAction(tweet));
     setTweet({ ...tweet, text: "" });
   };
   return (
