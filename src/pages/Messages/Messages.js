@@ -7,6 +7,7 @@ import DrawerBar from "../../components/DrawerBar/DrawerBar";
 import HomeBox from "../../components/HomeBox/HomeBox";
 import { MessagesIcon } from "../../components/icons";
 import LastChat from "../../components/LastChat/LastChat";
+import NotSelectedMessage from "../../components/NotSelectedMessage/NotSelectedMessage";
 import SearchInput from "../../components/Widgets/SearchInput/SearchInput";
 import "./Messages.css";
 
@@ -56,13 +57,7 @@ const Messages = () => {
         </div>
         <BottomSidebar />
       </div>
-      {path === "/Messages" ? (
-        <div className="chat">
-          <span>new message</span>
-        </div>
-      ) : (
-        <Chat />
-      )}
+      {path === "/Messages" ? <NotSelectedMessage /> : <Chat />}
     </HomeBox>
   );
 };
