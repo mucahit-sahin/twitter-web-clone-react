@@ -8,14 +8,12 @@ import { InfoIcon, CalenderIcon } from "../icons";
 import MyMessage from "../MyMessage/MyMessage";
 import "./Chat.css";
 
-const Chat = () => {
+const Chat = ({ messages, users }) => {
   //let { id } = useParams();
   var id = useLocation().pathname;
   const [user, setUser] = React.useState({});
   const [messagesData, setMessagesData] = React.useState();
 
-  const { messages } = useSelector((state) => state.messages);
-  const { users } = useSelector((state) => state.users);
   React.useEffect(() => {
     if (id) {
       let userid = id.split("-")[1];
@@ -65,7 +63,10 @@ const Chat = () => {
               message.from === "mucahitsahin6" ? (
                 <MyMessage message={message.message} />
               ) : (
-                <FromMessage message={message.message} />
+                <FromMessage
+                  message={message.message}
+                  userimage={user.userimage}
+                />
               )
             )}
         </div>

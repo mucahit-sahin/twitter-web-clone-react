@@ -1,5 +1,6 @@
 import { Avatar } from "@material-ui/core";
 import React from "react";
+import { useSelector } from "react-redux";
 import { useLocation } from "react-router";
 import BottomSidebar from "../../components/BottomSidebar/BottomSidebar";
 import Chat from "../../components/Chat/Chat";
@@ -13,8 +14,12 @@ import "./Messages.css";
 
 const Messages = () => {
   const [isDrawerBar, setIsDrawerBar] = React.useState(false);
+  const { messages } = useSelector((state) => state.messages);
+  const { users } = useSelector((state) => state.users);
   let path = useLocation().pathname;
   console.log(path);
+  console.log(messages);
+  console.log(users);
   document.title = "Messages / Twitter";
   return (
     <HomeBox>
@@ -39,25 +44,30 @@ const Messages = () => {
           <SearchInput placeholder="Search for people and groups" />
         </div>
         <div className="lastMessages">
-          <LastChat
-            username="cnecati"
-            displayName="Cihat Necati"
-            datetime="July 18 2019"
-            userimage="https://pbs.twimg.com/profile_images/1348390204810407937/BmUVaYGD_400x400.jpg"
-            lastMessage="İyi Akşamlar"
-            verified={true}
-          />
-          <LastChat
-            username="yasin"
-            displayName="Yasin"
-            datetime="May 18 2020"
-            userimage="https://i.ytimg.com/vi/eV4fMfIjTZ0/maxresdefault.jpg"
-            lastMessage="Görüşürüz"
-          />
+          {messages.map((message) => {
+            let user = users.find(
+              (user) => user.username === message.fromto.split("-")[1]
+            );
+            console.log(message.messages.slice(-1)[0].message);
+            return (
+              <LastChat
+                username={user.username}
+                displayName={user.displayName}
+                datetime={user.joinMonth + " " + user.joinYear}
+                userimage={user.userimage}
+                lastMessage={message.messages.slice(-1)[0].message}
+                verified={true}
+              />
+            );
+          })}
         </div>
         <BottomSidebar />
       </div>
-      {path === "/Messages" ? <NotSelectedMessage /> : <Chat />}
+      {path === "/Messages" ? (
+        <NotSelectedMessage />
+      ) : (
+        <Chat messages={messages} users={users} />
+      )}
     </HomeBox>
   );
 };

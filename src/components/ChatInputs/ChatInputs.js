@@ -13,6 +13,7 @@ const ChatInputs = () => {
   const sendMessage = () => {
     if (fromto != "" && message != "") {
       dispatch(addMessageAction(message, fromto));
+      setMessage("");
     }
   };
   return (
