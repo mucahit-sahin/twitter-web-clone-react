@@ -1,0 +1,19 @@
+.home {
+  display: flex;
+  height: 100vh;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+@media (min-width: 0) and (max-width: 1000px) {
+  .home {
+    max-width: 688px;
+  }
+}
+@media (min-width: 0) and (max-width: 450px) {
+  .home {
+    padding: 0px;
+  }
+}

@@ -1,6 +1,5 @@
 import { Avatar } from "@material-ui/core";
 import React from "react";
-import { useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
 import ChatInputs from "../ChatInputs/ChatInputs";
 import FromMessage from "../FromMessage/FromMessage";

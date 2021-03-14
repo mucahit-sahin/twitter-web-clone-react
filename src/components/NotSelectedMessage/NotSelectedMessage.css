@@ -16,3 +16,8 @@
   font-size: 15px;
   margin: 10px 0px 20px;
 }
+@media (min-width: 0) and (max-width: 1000px) {
+  .notSelectedMessage {
+    display: none;
+  }
+}

@@ -6,10 +6,6 @@
   height: max-content;
 }
 
-.feed::-webkit-scrollbar {
-  display: none;
-}
-
 .feed-header {
   position: sticky;
   top: 0;

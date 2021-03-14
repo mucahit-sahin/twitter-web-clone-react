@@ -11,7 +11,7 @@ const ChatInputs = () => {
   const [message, setMessage] = React.useState("");
   const dispatch = useDispatch();
   const sendMessage = () => {
-    if (fromto != "" && message != "") {
+    if (fromto !== "" && message !== "") {
       dispatch(addMessageAction(message, fromto));
       setMessage("");
     }

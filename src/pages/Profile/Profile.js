@@ -15,7 +15,7 @@ import HomeBox from "../../components/HomeBox/HomeBox";
 
 const Profile = () => {
   const [category, setCategory] = React.useState(1);
-  const posts = useSelector((state) => state.posts);
+  const { posts } = useSelector((state) => state.posts);
   document.title = "Mücahit Şahin (@mucahitsahin6) / Twitter";
   return (
     <HomeBox>

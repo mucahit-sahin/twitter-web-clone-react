@@ -15,3 +15,8 @@ body {
   width: 100vw;
   box-sizing: border-box;
 }
+@media (min-width: 0) and (max-width: 350px) {
+  * {
+    font-size: 0.9rem !important;
+  }
+}
