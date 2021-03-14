@@ -44,10 +44,10 @@ const DrawerBar = ({ active }) => {
             </span>
           </div>
         </div>
-        <MoreMenuItem title="Profile" Icon={UserIcon} />
-        <MoreMenuItem title="Lists" Icon={ListIcon} />
-        <MoreMenuItem title="Topics" Icon={TopicsIcon} />
-        <MoreMenuItem title="Bookmarks" Icon={BookmarkIcon} />
+        <MoreMenuItem title="Profile" Icon={UserIcon} link="/Profile" />
+        <MoreMenuItem title="Lists" Icon={ListIcon} link="/Lists" />
+        <MoreMenuItem title="Topics" Icon={TopicsIcon} link="/Explore" />
+        <MoreMenuItem title="Bookmarks" Icon={BookmarkIcon} link="/Profile" />
         <MoreMenuItem title="Moments" Icon={MomentsIcon} />
         <MoreMenuItem title="Newsletters" Icon={NewslettersIcon} />
         <MoreMenuItem title="Twitter Ads" Icon={TwitterAdsIcon} />

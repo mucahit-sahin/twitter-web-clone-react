@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./MoreMenuItem.css";
-const MoreMenuItem = ({ title, Icon }) => {
+const MoreMenuItem = ({ title, Icon, link }) => {
   return (
-    <div className="moreMenuItem">
+    <Link className="moreMenuItem" to={link && link}>
       <Icon />
       <span>{title}</span>
-    </div>
+    </Link>
   );
 };
 
