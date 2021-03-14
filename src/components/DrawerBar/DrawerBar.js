@@ -18,9 +18,9 @@ import {
 } from "../icons";
 import MoreMenuItem from "../MoreMenu/MoreMenuItem/MoreMenuItem";
 import "./DrawerBar.css";
-const DrawerBar = () => {
+const DrawerBar = ({ active }) => {
   return (
-    <div className="drawerBar">
+    <div className={`drawerBar ${active && "active"}`}>
       <div className="drawerBarHeader">
         <span>Account Info</span>
         <span>X</span>

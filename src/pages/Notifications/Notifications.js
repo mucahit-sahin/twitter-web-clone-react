@@ -18,14 +18,12 @@ function Notifications() {
     <HomeBox>
       <div className="feed">
         {isDrawerBar && (
-          <>
-            <div
-              onClick={() => setIsDrawerBar(false)}
-              className="drawerBarPanel"
-            />
-            <DrawerBar />
-          </>
+          <div
+            onClick={() => setIsDrawerBar(false)}
+            className="drawerBarPanel"
+          />
         )}
+        <DrawerBar active={isDrawerBar} />
         <div className="notificationsHeader">
           <div className="notificationsTitle">
             <div onClick={() => setIsDrawerBar(true)}>

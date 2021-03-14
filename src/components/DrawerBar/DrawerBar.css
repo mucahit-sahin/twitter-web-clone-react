@@ -4,9 +4,14 @@
     flex-direction: column;
     width: 280px;
     height: 100vh;
+    transform: translateX(-100%);
     position: absolute;
     background-color: var(--main-bg-color);
     z-index: 1001;
+    transition: transform 0.3s linear;
+  }
+  .drawerBar.active{
+    transform: translateX(0);
   }
   .drawerBarHeader {
     display: flex;
