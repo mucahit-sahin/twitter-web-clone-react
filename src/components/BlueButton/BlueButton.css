@@ -1,0 +1,14 @@
+.blueButton {
+  background-color: var(--blue);
+  padding: 10px;
+  border-radius: 9999px;
+}
+.blueButton span {
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 0px;
+}
+.blueButton:hover {
+  opacity: 0.8;
+}
