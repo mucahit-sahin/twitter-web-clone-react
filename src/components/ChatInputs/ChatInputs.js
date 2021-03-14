@@ -30,6 +30,9 @@ const ChatInputs = () => {
           placeholder="Start a new message"
           onFocus={() => setIsFocus(true)}
           onBlur={() => setIsFocus(false)}
+          onKeyDown={(e) => {
+            e.key === "Enter" && sendMessage();
+          }}
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
