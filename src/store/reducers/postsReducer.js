@@ -4,7 +4,9 @@ const initialstate = { posts };
 function postsReducer(state = initialstate, action) {
   switch (action.type) {
     case "ADD_POST":
-      return { ...state, posts: [...state.posts, action.payload] };
+      var arr = [...state.posts];
+      arr.unshift(action.payload);
+      return { ...state, posts: arr };
     default:
       return state;
   }
