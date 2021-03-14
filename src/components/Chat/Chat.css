@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   border-right: 0.5px var(--border-color) solid;
+  border-left: 0.5px var(--border-color) solid;
 }
 .chatHeader {
   display: flex;
@@ -11,6 +12,9 @@
   border-bottom: 0.5px solid var(--border-color);
   padding-left: 15px;
 }
+.chatHeader svg:nth-child(1){
+  display: none;
+}	
 .chatHeader > div:nth-child(2) {
   display: flex;
   flex-direction: column;
@@ -101,6 +105,15 @@
 }
 @media (min-width: 0) and (max-width: 1000px) {
   .chat {
-    display: none;
+    flex: 1;
   }
+}
+@media (min-width: 0) and (max-width: 1000px) {
+  .chatHeader svg:nth-child(1){
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin-left: 0px;
+    padding: 0px; 
+  }	
 }

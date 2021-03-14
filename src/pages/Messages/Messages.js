@@ -17,13 +17,11 @@ const Messages = () => {
   const { messages } = useSelector((state) => state.messages);
   const { users } = useSelector((state) => state.users);
   let path = useLocation().pathname;
-  console.log(path);
-  console.log(messages);
-  console.log(users);
   document.title = "Messages / Twitter";
+
   return (
     <HomeBox>
-      <div className="messages">
+      <div className={`messages ${path !== "/Messages" && "messagesNone"}`}>
         {isDrawerBar && (
           <>
             <div
@@ -48,7 +46,6 @@ const Messages = () => {
             let user = users.find(
               (user) => user.username === message.fromto.split("-")[1]
             );
-            console.log(message.messages.slice(-1)[0].message);
             return (
               <LastChat
                 username={user.username}

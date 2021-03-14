@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import ChatInputs from "../ChatInputs/ChatInputs";
 import FromMessage from "../FromMessage/FromMessage";
 import { InfoIcon, CalenderIcon } from "../icons";
+import BackIcon from "@material-ui/icons/KeyboardBackspace";
 import MyMessage from "../MyMessage/MyMessage";
 import "./Chat.css";
 
@@ -27,6 +28,7 @@ const Chat = ({ messages, users }) => {
   return (
     <div className="chat">
       <div className="chatHeader">
+        <BackIcon />
         <Avatar src={user && user.userimage} />
         <div>
           <span>{user && user.displayName}</span>
