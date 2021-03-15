@@ -10,18 +10,22 @@ import BackIcon from "@material-ui/icons/KeyboardBackspace";
 import ScheduleIcon from "@material-ui/icons/CalendarToday";
 import { Avatar } from "@material-ui/core";
 import { useSelector } from "react-redux";
+import { useHistory } from "react-router-dom";
 import Links from "../../components/Widgets/Links/Links";
 import HomeBox from "../../components/HomeBox/HomeBox";
 
 const Profile = () => {
   const [category, setCategory] = React.useState(1);
   const { posts } = useSelector((state) => state.posts);
+  let history = useHistory();
   document.title = "Mücahit Şahin (@mucahitsahin6) / Twitter";
   return (
     <HomeBox>
       <section className="feed">
         <div className="profileHeader">
-          <BackIcon />
+          <div onClick={() => history.goBack()}>
+            <BackIcon />
+          </div>
           <div>
             <span>Mücahit Şahin</span>
             <span>12 Tweets</span>

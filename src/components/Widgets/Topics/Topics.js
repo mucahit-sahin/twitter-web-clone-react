@@ -11,28 +11,28 @@ function Topics() {
         <SettingsIcon />
       </div>
       <TopicItem
-        category="Football · Trending"
-        title="Fenerbahçe - Başakşehir"
+        category="Programming · Trending"
+        title="React"
         numberoftweet="13.1K"
       />
       <TopicItem
-        category="Football · Trending"
-        title="Fenerbahçe - Başakşehir"
+        category="Programming · Trending"
+        title="React Native"
         numberoftweet="13.1K"
       />
       <TopicItem
-        category="Football · Trending"
-        title="Fenerbahçe - Başakşehir"
+        category="Programming · Trending"
+        title="Javascript"
         numberoftweet="13.1K"
       />
       <TopicItem
-        category="Football · Trending"
-        title="Fenerbahçe - Başakşehir"
+        category="Programming · Trending"
+        title="CSS"
         numberoftweet="13.1K"
       />
       <TopicItem
-        category="Football · Trending"
-        title="Fenerbahçe - Başakşehir"
+        category="Programming · Trending"
+        title="HTML"
         numberoftweet="13.1K"
       />
 

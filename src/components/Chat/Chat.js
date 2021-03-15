@@ -1,6 +1,6 @@
 import { Avatar } from "@material-ui/core";
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 import ChatInputs from "../ChatInputs/ChatInputs";
 import FromMessage from "../FromMessage/FromMessage";
 import { InfoIcon, CalenderIcon } from "../icons";
@@ -11,6 +11,7 @@ import "./Chat.css";
 const Chat = ({ messages, users }) => {
   //let { id } = useParams();
   var id = useLocation().pathname;
+  let history = useHistory();
   const [user, setUser] = React.useState({});
   const [messagesData, setMessagesData] = React.useState();
 
@@ -28,7 +29,9 @@ const Chat = ({ messages, users }) => {
   return (
     <div className="chat">
       <div className="chatHeader">
-        <BackIcon />
+        <div onClick={() => history.goBack()}>
+          <BackIcon />
+        </div>
         <Avatar src={user && user.userimage} />
         <div>
           <span>{user && user.displayName}</span>

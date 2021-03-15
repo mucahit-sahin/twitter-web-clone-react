@@ -8,13 +8,13 @@
   align-items: center;
   border-bottom: 0.5px solid var(--border-color);
 }
-.profileHeader > .MuiSvgIcon-root {
+.profileHeader  .MuiSvgIcon-root {
   margin: 8px 25px 8px 12px;
   padding: 7px;
   color: var(--blue);
   border-radius: 9999px;
 }
-.profileHeader > .MuiSvgIcon-root:hover {
+.profileHeader  .MuiSvgIcon-root:hover {
   background-color: var(--hover-blue-color);
 }
 .profileHeader div span:nth-child(1) {
