@@ -10,22 +10,22 @@ function Login() {
       <div className="panel">
         <div className="panelHeader">
           <Logo width={39} fill="white" />
-          <span className="panelHeaderText">Twitter'a giriş yap</span>
+          <span className="panelHeaderText">Login to Twitter</span>
         </div>
         <div className="inputs">
-          <TextInput text="Telefon, e-posta veya kullanıcı ad" />
+          <TextInput text="Phone, email or username" />
           <TextInput text="Password" />
         </div>
         <Link to="/home" className="loginBtn">
-          <span className="loginText">Giriş yap</span>
+          <span className="loginText">Login</span>
         </Link>
         <div className="loginLinks">
           <a href="/">
-            <span className="link">Şifreni mi unuttun?</span>
+            <span className="link">Forgot password</span>
           </a>
           <span className="point">.</span>
           <a href="/signup">
-            <span className="link">Twitter'a kaydol</span>
+            <span className="link">Sign up on Twitter</span>
           </a>
         </div>
       </div>

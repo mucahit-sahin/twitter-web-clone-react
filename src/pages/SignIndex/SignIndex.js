@@ -16,18 +16,18 @@ function SignIndex() {
         <div className="info">
           <div>
             <span>
-              <SearchIcon className="indexIcon" /> İlgi alanlarını takip et.
+              <SearchIcon className="indexIcon" /> Follow your interests.
             </span>
           </div>
           <div>
             <span>
               <UsersIcon className="indexIcon" />
-              İnsanların neler hakkında konuştuğuna kulak ver.
+              Hear what people are talking about.
             </span>
           </div>
           <div>
             <span>
-              <ChatIcon className="indexIcon" /> Sohbete katıl.
+              <ChatIcon className="indexIcon" /> Join to conversation.
             </span>
           </div>
         </div>
@@ -35,17 +35,19 @@ function SignIndex() {
       <div className="col2">
         <div className="menu">
           <Logo width={30} fill="white" />
-          <span className="header">Dünyada şu anda olup bitenleri gör</span>
-          <span className="join">Twitter'a bugün katıl.</span>
+          <span className="header">
+            See what's happening in the world right now
+          </span>
+          <span className="join">Join Twitter today.</span>
           <div className="buttons">
             <Link to="/signup" className="signup">
               <div className="signupItem">
-                <span className="signupText">Üye ol</span>
+                <span className="signupText">Sign Up</span>
               </div>
             </Link>
             <Link to="/login" className="login">
               <div className="loginItem">
-                <span className="loginText">Giriş yap</span>
+                <span className="loginText">Login</span>
               </div>
             </Link>
           </div>

@@ -12,22 +12,20 @@ function Signup() {
           <Logo width={26} height={53} fill="white" />
         </div>
         <div className="signupHeader">
-          <span>Hesabını oluştur</span>
+          <span>Create your account</span>
         </div>
         <TextInput text="Name" />
         <TextInput text="Email" />
         <TextInput text="Date of Birth" />
         <div className="acceptTerm">
           <span>
-            Kaydolduğunda
-            <span className="acceptTermBlue"> Hizmet Şartları'nı </span>
-            ve <span className="acceptTermBlue"> Çerez Kullanımı</span> dahil
-            olmak üzere
-            <span className="acceptTermBlue"> Gizlilik Politikası'nı </span>
-            kabul etmiş olursun.
-            <span className="acceptTermBlue">Gizlilik Seçeneklerini </span>
-            buna göre belirlediğinde başkaları seni e-postan veya telefon
-            numaranla bulabilir.
+            When you register, you agree to the
+            <span className="acceptTermBlue"> terms of service</span> and the
+            <span className="acceptTermBlue"> Privacy Policy</span>, including
+            the use of <span className="acceptTermBlue">cookies</span>. When you
+            set your
+            <span className="acceptTermBlue"> privacy options </span>
+            accordingly, others can find you by email or phone number.
           </span>
         </div>
         <Link to="/home" className="signupBtn">
