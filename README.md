@@ -1,12 +1,12 @@
 # Twitter Web Clone React
 
-Merhabalar bu projemde twitter web sitesini gerçekleştirmeye çalıştım. Bunu yaparkende Javascriptin React Framework'ünü kullandım.
+Hello. In this project I tried to build the twitter website. While doing this, I used the React Framework of Javascript. 
 
-## Proje Kurulumu
+## Project Setup
 
-Projeyi indirdikten sonra terminale <b>"npm install"</b> komutu girilerek projede kullanılan kütüphaneler yüklenilir. Bu işlemden sonra <b>"npm start"</b> komutu girilerek proje çalıştırılır.
+After downloading the project, the <b> "npm install" </b> command is entered into the terminal and the libraries used in the project are loaded. After this process, the project is run by entering the command <b> "npm start" </b>. 
 
-## Sayfalar - <a href="https://twitter-web-clone-react.vercel.app">Canlı önizlemek için tıklayınız</a>
+## Pages - <a href="https://twitter-web-clone-react.vercel.app">Demo</a>
 
 - Web
 
