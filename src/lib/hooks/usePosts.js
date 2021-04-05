@@ -11,7 +11,7 @@ const usePosts = () => {
       userimage,
       text,
       sharedImage = "",
-      date = new Date().getTime(),
+      date = Date.now(),
     }) => {
       firebase.firestore().collection("posts")
         .add({
@@ -27,7 +27,7 @@ const usePosts = () => {
 
     useEffect(() => {
       firebase.firestore().collection("posts")
-        .orderBy("date")
+        .orderBy("date", "desc")
         .onSnapshot(async (querySnapshot) => {
           const allPosts = []
           await querySnapshot.forEach((doc) => {
