@@ -6,6 +6,7 @@ import HomeStars from "../icons/HomeStars";
 import BottomSidebar from "../BottomSidebar/BottomSidebar";
 import { Avatar } from "@material-ui/core";
 import DrawerBar from "../DrawerBar/DrawerBar";
+import Loading from "./Loading/Loading"
 import usePosts from "../../lib/hooks/usePosts";
 
 
@@ -14,6 +15,7 @@ function Feed() {
   console.log({loading, posts});
   //const { posts } = useSelector((state) => state).posts;
   const [isDrawerBar, setIsDrawerBar] = React.useState(false);
+
   return (
     <section className="feed">
       {isDrawerBar && (
@@ -33,7 +35,9 @@ function Feed() {
       </div>
       <TweetBox createPost={createPost} />
       <article>
-        {posts.map((post) => (
+        {loading ? (
+          <Loading />
+        ) : posts.map((post) => (
           <Post
             key={post.id}
             username={post.username}

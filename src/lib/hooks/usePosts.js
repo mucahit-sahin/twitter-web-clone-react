@@ -27,6 +27,7 @@ const usePosts = () => {
 
     useEffect(() => {
       firebase.firestore().collection("posts")
+        .orderBy("date")
         .onSnapshot(async (querySnapshot) => {
           const allPosts = []
           await querySnapshot.forEach((doc) => {
