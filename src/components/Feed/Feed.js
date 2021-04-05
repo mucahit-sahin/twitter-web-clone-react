@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import firebase from "../../lib/firebase";
 import "./Feed.css";
 import TweetBox from "./TweetBox/TweetBox";
 import Post from "./Post/Post";
@@ -6,8 +7,47 @@ import HomeStars from "../icons/HomeStars";
 import BottomSidebar from "../BottomSidebar/BottomSidebar";
 import { Avatar } from "@material-ui/core";
 import DrawerBar from "../DrawerBar/DrawerBar";
-import usePosts from "../../lib/hooks/usePosts";
 
+const usePosts = () => {
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const createPost = ({
+    id = Date.now(),
+    username,
+    displayName,
+    userimage,
+    text,
+    sharedImage = "",
+    date = new Date().getTime(),
+  }) => {
+    firebase.firestore().collection("posts")
+      .add({
+        id,
+        username,
+        displayName,
+        userimage,
+        text,
+        sharedImage,
+        date
+      })
+  }
+
+  useEffect(() => {
+    console.log("Listening")
+    firebase.firestore().collection("posts")
+      .onSnapshot(async (querySnapshot) => {
+        const allPosts = []
+        await querySnapshot.forEach((doc) => {
+          allPosts.push(doc.data())
+        });
+        await setPosts(allPosts);
+        return setLoading(false)
+
+      });
+  }, []);
+
+  return [loading, posts, createPost];
+}
 
 function Feed() {
   const [loading, posts, createPost] = usePosts();

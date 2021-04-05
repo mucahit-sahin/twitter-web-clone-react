@@ -24,7 +24,7 @@ const Chat = ({ messages, users }) => {
         messages.find((message) => message.fromto === messageid).messages
       );
     }
-  }, [id, messages, users]);
+  }, [id]);
 
   return (
     <div className="chat">
