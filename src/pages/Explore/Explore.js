@@ -9,9 +9,14 @@ import Links from "../../components/Widgets/Links/Links";
 import DrawerBar from "../../components/DrawerBar/DrawerBar";
 import { Avatar } from "@material-ui/core";
 import HomeBox from "../../components/HomeBox/HomeBox";
+import Loading from "../../components/Loading/Loading";
 
 function Explore() {
   const [isDrawerBar, setIsDrawerBar] = React.useState(false);
+  const [loading, setLoading] = React.useState(true);
+  setTimeout(() => {
+    setLoading(false);
+  }, 2000);
   document.title = "Explore / Twitter";
   return (
     <HomeBox>
@@ -31,7 +36,7 @@ function Explore() {
           <SettingsIcon />
         </div>
         <div className="exploreContent">
-          <Topics />
+          {loading ? <Loading /> : <Topics />}
         </div>
         <BottomSidebar />
       </div>

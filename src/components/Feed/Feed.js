@@ -7,10 +7,15 @@ import BottomSidebar from "../BottomSidebar/BottomSidebar";
 import { useSelector } from "react-redux";
 import { Avatar } from "@material-ui/core";
 import DrawerBar from "../DrawerBar/DrawerBar";
+import Loading from "../Loading/Loading";
 
 function Feed() {
   const { posts } = useSelector((state) => state).posts;
   const [isDrawerBar, setIsDrawerBar] = React.useState(false);
+  const [loading, setLoading] = React.useState(true);
+  setTimeout(() => {
+    setLoading(false);
+  }, 2000);
   return (
     <section className="feed">
       {isDrawerBar && (
@@ -29,19 +34,23 @@ function Feed() {
         </div>
       </div>
       <TweetBox />
-      <article>
-        {posts.map((post) => (
-          <Post
-            key={post.id}
-            username={post.username}
-            userimage={post.userimage}
-            date={post.date}
-            displayName={post.displayName}
-            text={post.text}
-            shareImage={post.shareImage}
-          />
-        ))}
-      </article>
+      {loading ? (
+        <Loading />
+      ) : (
+        <article>
+          {posts.map((post) => (
+            <Post
+              key={post.id}
+              username={post.username}
+              userimage={post.userimage}
+              date={post.date}
+              displayName={post.displayName}
+              text={post.text}
+              shareImage={post.shareImage}
+            />
+          ))}
+        </article>
+      )}
       <BottomSidebar />
     </section>
   );

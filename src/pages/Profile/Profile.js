@@ -13,12 +13,17 @@ import { useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import Links from "../../components/Widgets/Links/Links";
 import HomeBox from "../../components/HomeBox/HomeBox";
+import Loading from "../../components/Loading/Loading";
 
 const Profile = () => {
   const [category, setCategory] = React.useState(1);
   const { posts } = useSelector((state) => state.posts);
   let history = useHistory();
   document.title = "Mücahit Şahin (@mucahitsahin6) / Twitter";
+  const [loading, setLoading] = React.useState(true);
+  setTimeout(() => {
+    setLoading(false);
+  }, 2000);
   return (
     <HomeBox>
       <section className="feed">
@@ -88,17 +93,21 @@ const Profile = () => {
           </div>
         </div>
         <article className="profilePosts">
-          {posts.map((post) => (
-            <Post
-              key={post.id}
-              username={post.username}
-              userimage={post.userimage}
-              date={post.date}
-              displayName={post.displayName}
-              text={post.text}
-              shareImage={post.shareImage}
-            />
-          ))}
+          {!loading ? (
+            posts.map((post) => (
+              <Post
+                key={post.id}
+                username={post.username}
+                userimage={post.userimage}
+                date={post.date}
+                displayName={post.displayName}
+                text={post.text}
+                shareImage={post.shareImage}
+              />
+            ))
+          ) : (
+            <Loading />
+          )}
         </article>
         <BottomSidebar />
       </section>
